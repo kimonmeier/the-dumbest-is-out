@@ -1,0 +1,8 @@
+{
+  "name": "the-dumbest-is-out",
+  "version": "0.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:kimonmeier/the-dumbest-is-out.git",
+  "author": "Kimon Meier <kimon.meier@gmail.com≈>",
+  "license": "MIT"
+}
