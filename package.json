@@ -1,8 +1,50 @@
 {
-  "name": "the-dumbest-is-out",
-  "version": "0.0.0",
-  "main": "index.js",
-  "repository": "git@github.com:kimonmeier/the-dumbest-is-out.git",
-  "author": "Kimon Meier <kimon.meier@gmail.com≈>",
-  "license": "MIT"
+	"name": "the-dumbest-is-out",
+	"version": "0.0.0",
+	"main": "index.js",
+	"repository": "git@github.com:kimonmeier/the-dumbest-is-out.git",
+	"author": "Kimon Meier <kimon.meier@gmail.com>",
+	"license": "MIT",
+	"type": "module",
+	"scripts": {
+		"client::dev": "vite dev",
+		"client::build": "vite build",
+		"client::preview": "vite preview",
+		"client::check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
+		"client::check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
+		"server::dev": "deno run --import-map=import_map.json --allow-net --allow-read ./src/server/index.ts",
+		"server::debug": "deno run --inspect-wait --import-map=import_map.json --allow-net --allow-read ./src/server/index.ts",
+		"server::build": "deno compile --import-map=import_map.json --allow-net --allow-read ./src/server/index.ts",
+		"lint": "prettier --check . && eslint .",
+		"format": "prettier --write ."
+	},
+	"devDependencies": {
+		"@eslint/compat": "^1.4.0",
+		"@eslint/js": "^9.36.0",
+		"@sveltejs/adapter-node": "^5.3.2",
+		"@sveltejs/kit": "^2.43.2",
+		"@sveltejs/vite-plugin-svelte": "^6.2.0",
+		"@tailwindcss/vite": "^4.1.13",
+		"@types/node": "^22",
+		"eslint": "^9.36.0",
+		"eslint-config-prettier": "^10.1.8",
+		"eslint-plugin-svelte": "^3.12.4",
+		"globals": "^16.4.0",
+		"prettier": "^3.6.2",
+		"prettier-plugin-svelte": "^3.4.0",
+		"prettier-plugin-tailwindcss": "^0.6.14",
+		"svelte": "^5.39.5",
+		"svelte-check": "^4.3.2",
+		"tailwindcss": "^4.1.13",
+		"typescript": "^5.9.2",
+		"typescript-eslint": "^8.44.1",
+		"vite": "^7.1.7",
+		"autoprefixer": "^10.4.21"
+	},
+	"dependencies": {
+		"howler": "^2.2.4",
+		"socket.io": "^4.8.1",
+		"socket.io-client": "^4.8.1",
+		"uuid": "^13.0.0"
+	}
 }
