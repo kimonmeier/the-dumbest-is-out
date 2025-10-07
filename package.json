@@ -42,10 +42,10 @@
 		"vite": "^7.1.7"
 	},
 	"dependencies": {
+		"@danielemariani/ts-event-bus": "^1.2.0",
 		"howler": "^2.2.4",
 		"socket.io": "^4.8.1",
 		"socket.io-client": "^4.8.1",
-		"ts-event-bus": "^4.2.0",
 		"uuid": "^13.0.0"
 	}
 }
