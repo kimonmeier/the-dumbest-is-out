@@ -1,0 +1,2066 @@
+[
+	{
+		"frage": "Welcher Planet unseres Sonnensystems hat die kürzeste Umlaufzeit um die Sonne?",
+		"antwort": "Merkur"
+	},
+	{
+		"frage": "Welches chemische Element hat die Ordnungszahl 79?",
+		"antwort": "Gold"
+	},
+	{
+		"frage": "In welchem Jahr fand die Französische Revolution statt?",
+		"antwort": "1789"
+	},
+	{
+		"frage": "Wer schrieb das Buch '1984'?",
+		"antwort": "George Orwell"
+	},
+	{
+		"frage": "Welches ist das längste Gebirge der Erde?",
+		"antwort": "Die Anden"
+	},
+	{
+		"frage": "Wie viele Knochen hat ein erwachsener Mensch?",
+		"antwort": "206"
+	},
+	{
+		"frage": "Welcher Fluss ist der längste der Welt?",
+		"antwort": "Der Nil"
+	},
+	{
+		"frage": "Welches Land hat die meisten Zeitzone?",
+		"antwort": "Frankreich (inkl. Überseegebiete)"
+	},
+	{
+		"frage": "Wie heißt das größte Korallenriff der Welt?",
+		"antwort": "Das Great Barrier Reef"
+	},
+	{
+		"frage": "Welches Element hat das chemische Symbol 'Fe'?",
+		"antwort": "Eisen"
+	},
+	{
+		"frage": "Wer komponierte die 'Mondscheinsonate'?",
+		"antwort": "Ludwig van Beethoven"
+	},
+	{
+		"frage": "Welche Hauptstadt liegt am weitesten nördlich?",
+		"antwort": "Reykjavík, Island"
+	},
+	{
+		"frage": "In welchem Jahr wurde die Berliner Mauer errichtet?",
+		"antwort": "1961"
+	},
+	{
+		"frage": "Welcher Ozean ist der kleinste der Welt?",
+		"antwort": "Der Arktische Ozean"
+	},
+	{
+		"frage": "Wer erfand den Buchdruck mit beweglichen Lettern in Europa?",
+		"antwort": "Johannes Gutenberg"
+	},
+	{
+		"frage": "Welches ist das häufigste chemische Element im Universum?",
+		"antwort": "Wasserstoff"
+	},
+	{
+		"frage": "Welcher Fluss fließt durch Paris?",
+		"antwort": "Die Seine"
+	},
+	{
+		"frage": "Wer schrieb 'Romeo und Julia'?",
+		"antwort": "William Shakespeare"
+	},
+	{
+		"frage": "Welches ist das kleinste Land der Welt?",
+		"antwort": "Vatikanstadt"
+	},
+	{
+		"frage": "Welcher Berg ist der höchste außerhalb Asiens?",
+		"antwort": "Aconcagua"
+	},
+	{
+		"frage": "Wer malte die 'Mona Lisa'?",
+		"antwort": "Leonardo da Vinci"
+	},
+	{
+		"frage": "Welches Land hat die längste Küstenlinie?",
+		"antwort": "Kanada"
+	},
+	{
+		"frage": "Wie viele Spieler hat eine Fußballmannschaft auf dem Feld?",
+		"antwort": "11"
+	},
+	{
+		"frage": "Welches chemische Element hat die Ordnungszahl 1?",
+		"antwort": "Wasserstoff"
+	},
+	{
+		"frage": "Wer war der erste Mensch im Weltraum?",
+		"antwort": "Juri Gagarin"
+	},
+	{
+		"frage": "Welche ist die größte Wüste der Welt?",
+		"antwort": "Die Antarktis"
+	},
+	{
+		"frage": "In welchem Jahr endete der Zweite Weltkrieg?",
+		"antwort": "1945"
+	},
+	{
+		"frage": "Welcher Planet wird auch 'Roter Planet' genannt?",
+		"antwort": "Mars"
+	},
+	{
+		"frage": "Wer schrieb 'Die Odyssee'?",
+		"antwort": "Homer"
+	},
+	{
+		"frage": "Welches ist das am meisten gesprochene Pidgin der Welt?",
+		"antwort": "Chinesisches Pidgin-Englisch"
+	},
+	{
+		"frage": "Welcher Baum kann über 100 Meter hoch werden?",
+		"antwort": "Der Küstenmammutbaum"
+	},
+	{
+		"frage": "Welches Land hat die meisten Inseln?",
+		"antwort": "Schweden"
+	},
+	{
+		"frage": "Wie viele Chromosomen hat ein gesunder Mensch?",
+		"antwort": "46"
+	},
+	{
+		"frage": "Welcher Fluss ist der wasserreichste der Welt?",
+		"antwort": "Der Amazonas"
+	},
+	{
+		"frage": "Wer erfand die Glühbirne?",
+		"antwort": "Thomas Edison"
+	},
+	{
+		"frage": "Welches ist das am dünnsten besiedelte Land der Welt?",
+		"antwort": "Mongolei"
+	},
+	{
+		"frage": "Wie viele Oscars gewann der Film 'Titanic'?",
+		"antwort": "11"
+	},
+	{
+		"frage": "Welches chemische Element hat die Ordnungszahl 6?",
+		"antwort": "Kohlenstoff"
+	},
+	{
+		"frage": "Wer war der erste Präsident der Vereinigten Staaten?",
+		"antwort": "George Washington"
+	},
+	{
+		"frage": "Welcher See ist der tiefste der Welt?",
+		"antwort": "Der Baikalsee"
+	},
+	{
+		"frage": "Welcher Planet unseres Sonnensystems hat die meisten Monde?",
+		"antwort": "Jupiter"
+	},
+	{
+		"frage": "Wer schrieb 'Der Kleine Prinz'?",
+		"antwort": "Antoine de Saint-Exupéry"
+	},
+	{
+		"frage": "Welches ist das größte Säugetier der Welt?",
+		"antwort": "Der Blauwal"
+	},
+	{
+		"frage": "Welches Element hat die höchste Atommasse?",
+		"antwort": "Oganesson"
+	},
+	{
+		"frage": "Wer schrieb das Theaterstück 'Faust'?",
+		"antwort": "Johann Wolfgang von Goethe"
+	},
+	{
+		"frage": "Welcher Kontinent hat die meisten Länder?",
+		"antwort": "Afrika"
+	},
+	{
+		"frage": "In welchem Jahr wurde die erste E-Mail verschickt?",
+		"antwort": "1971"
+	},
+	{
+		"frage": "Welches ist das härteste natürliche Material?",
+		"antwort": "Diamant"
+	},
+	{
+		"frage": "Wer malte 'Die Sternennacht'?",
+		"antwort": "Vincent van Gogh"
+	},
+	{
+		"frage": "Welches Land hat die meisten Nobelpreisträger hervorgebracht?",
+		"antwort": "USA"
+	},
+	{
+		"frage": "Wie viele Glieder hat ein Tausendfüßler tatsächlich?",
+		"antwort": "Zwischen 20 und 354 Beinpaare"
+	},
+	{
+		"frage": "Welcher Fluss fließt durch Rom?",
+		"antwort": "Der Tiber"
+	},
+	{
+		"frage": "Wer komponierte die Oper 'Die Zauberflöte'?",
+		"antwort": "Wolfgang Amadeus Mozart"
+	},
+	{
+		"frage": "Welches ist das am meisten angebaute Getreide der Welt?",
+		"antwort": "Mais"
+	},
+	{
+		"frage": "In welchem Jahr wurde die UNO gegründet?",
+		"antwort": "1945"
+	},
+	{
+		"frage": "Wer schrieb 'Der Herr der Ringe'?",
+		"antwort": "J.R.R. Tolkien"
+	},
+	{
+		"frage": "Welches ist das größte Landsäugetier?",
+		"antwort": "Der Afrikanische Elefant"
+	},
+	{
+		"frage": "Wie viele Planeten in unserem Sonnensystem haben Ringe?",
+		"antwort": "4 (Jupiter, Saturn, Uranus, Neptun)"
+	},
+	{
+		"frage": "Welches chemische Element hat die Ordnungszahl 92?",
+		"antwort": "Uran"
+	},
+	{
+		"frage": "Wer war der erste Mensch auf dem Mond?",
+		"antwort": "Neil Armstrong"
+	},
+	{
+		"frage": "Welche ist die längste Straße der Welt?",
+		"antwort": "Pan-American Highway"
+	},
+	{
+		"frage": "In welchem Jahr wurde das erste iPhone vorgestellt?",
+		"antwort": "2007"
+	},
+	{
+		"frage": "Welcher Musiker wird auch 'King of Pop' genannt?",
+		"antwort": "Michael Jackson"
+	},
+	{
+		"frage": "Wie viele Atemzüge macht ein Mensch durchschnittlich pro Tag?",
+		"antwort": "Etwa 20.000"
+	},
+	{
+		"frage": "Welcher Berg ist der höchste in den Alpen?",
+		"antwort": "Mont Blanc"
+	},
+	{
+		"frage": "Wer erfand das World Wide Web?",
+		"antwort": "Tim Berners-Lee"
+	},
+	{
+		"frage": "Welches Land hat die meisten Seen?",
+		"antwort": "Finnland"
+	},
+	{
+		"frage": "Wie viele Tasten hat eine klassische Schreibmaschine?",
+		"antwort": "44"
+	},
+	{
+		"frage": "Welches chemische Element hat das Symbol 'Na'?",
+		"antwort": "Natrium"
+	},
+	{
+		"frage": "Wer schrieb 'Die göttliche Komödie'?",
+		"antwort": "Dante Alighieri"
+	},
+	{
+		"frage": "Welches ist das am tiefsten gelegene Land der Erde?",
+		"antwort": "Niederlande"
+	},
+	{
+		"frage": "In welchem Jahr wurde die erste Mondlandung durchgeführt?",
+		"antwort": "1969"
+	},
+	{
+		"frage": "Welcher Stern ist der Erde am nächsten?",
+		"antwort": "Die Sonne"
+	},
+	{
+		"frage": "Wer malte 'Der Schrei'?",
+		"antwort": "Edvard Munch"
+	},
+	{
+		"frage": "Welches ist das am häufigsten konsumierte Getränk der Welt nach Wasser?",
+		"antwort": "Tee"
+	},
+	{
+		"frage": "Wie viele Zehen hat ein Strauß pro Fuß?",
+		"antwort": "2"
+	},
+	{
+		"frage": "Welcher Fluss fließt durch London?",
+		"antwort": "Die Themse"
+	},
+	{
+		"frage": "Wer komponierte die '5. Symphonie'?",
+		"antwort": "Ludwig van Beethoven"
+	},
+	{
+		"frage": "Wie viele Oscars gewann der Film 'Der Herr der Ringe: Die Rückkehr des Königs'?",
+		"antwort": "11"
+	},
+	{
+		"frage": "Welches chemische Element hat die Ordnungszahl 26?",
+		"antwort": "Eisen"
+	},
+	{
+		"frage": "Wer war der erste Mensch, der den Mount Everest bestieg?",
+		"antwort": "Edmund Hillary und Tenzing Norgay"
+	},
+	{
+		"frage": "Welcher See ist der größte Süßwassersee der Welt?",
+		"antwort": "Der Obere See (Lake Superior)"
+	},
+	{
+		"frage": "In welchem Jahr wurde die Europäische Union gegründet?",
+		"antwort": "1993 (Vertrag von Maastricht)"
+	},
+	{
+		"frage": "Welcher Planet unseres Sonnensystems rotiert rückwärts?",
+		"antwort": "Venus"
+	},
+	{
+		"frage": "Wer schrieb 'Krieg und Frieden'?",
+		"antwort": "Leo Tolstoi"
+	},
+	{
+		"frage": "Welches ist das schnellste Landtier?",
+		"antwort": "Der Gepard"
+	},
+	{
+		"frage": "Welcher Fluss ist der längste in Europa?",
+		"antwort": "Die Wolga"
+	},
+	{
+		"frage": "Wer erfand die Relativitätstheorie?",
+		"antwort": "Albert Einstein"
+	},
+	{
+		"frage": "Welches ist das am dichtesten besiedelte Land der Welt?",
+		"antwort": "Monaco"
+	},
+	{
+		"frage": "Welches Element hat die niedrigste Schmelztemperatur?",
+		"antwort": "Helium"
+	},
+	{
+		"frage": "Wer schrieb 'Don Quijote'?",
+		"antwort": "Miguel de Cervantes"
+	},
+	{
+		"frage": "Welcher Ozean ist der drittgrößte der Welt?",
+		"antwort": "Der Indische Ozean"
+	},
+	{
+		"frage": "In welchem Jahr wurde YouTube gegründet?",
+		"antwort": "2005"
+	},
+	{
+		"frage": "Welches ist das leichteste Metall?",
+		"antwort": "Lithium"
+	},
+	{
+		"frage": "Wer malte 'Guernica'?",
+		"antwort": "Pablo Picasso"
+	},
+	{
+		"frage": "Welches Land hat die meisten Pyramiden?",
+		"antwort": "Sudan"
+	},
+	{
+		"frage": "Wie viele Halswirbel hat eine Giraffe?",
+		"antwort": "7 (wie die meisten Säugetiere)"
+	},
+	{
+		"frage": "Welcher Fluss fließt durch Budapest?",
+		"antwort": "Die Donau"
+	},
+	{
+		"frage": "Wer komponierte 'Eine kleine Nachtmusik'?",
+		"antwort": "Wolfgang Amadeus Mozart"
+	},
+	{
+		"frage": "Welches ist das meistgesprochene Kreol der Welt?",
+		"antwort": "Haitianisches Kreol"
+	},
+	{
+		"frage": "In welchem Jahr fand die erste moderne Olympiade statt?",
+		"antwort": "1896"
+	},
+	{
+		"frage": "Wer schrieb 'Stolz und Vorurteil'?",
+		"antwort": "Jane Austen"
+	},
+	{
+		"frage": "Welches ist das giftigste Tier der Welt?",
+		"antwort": "Der Pfeilgiftfrosch"
+	},
+	{
+		"frage": "Wie viele Monde hat der Mars?",
+		"antwort": "2 (Phobos und Deimos)"
+	},
+	{
+		"frage": "Welches chemische Element hat die Ordnungszahl 50?",
+		"antwort": "Zinn"
+	},
+	{
+		"frage": "Wer war der erste Mensch, der den Südpol erreichte?",
+		"antwort": "Roald Amundsen"
+	},
+	{
+		"frage": "Welche ist die längste Brücke der Welt?",
+		"antwort": "Danyang–Kunshan-Brücke in China"
+	},
+	{
+		"frage": "In welchem Jahr wurde das erste Foto gemacht?",
+		"antwort": "1826"
+	},
+	{
+		"frage": "Welcher Komponist wird oft als 'Der Walzerkönig' bezeichnet?",
+		"antwort": "Johann Strauss II"
+	},
+	{
+		"frage": "Wie viele Stacheln hat ein durchschnittlicher Igel?",
+		"antwort": "Etwa 5.000 bis 7.000"
+	},
+	{
+		"frage": "Welcher Berg ist der höchste in Südamerika?",
+		"antwort": "Aconcagua"
+	},
+	{
+		"frage": "Wer erfand das Telefon?",
+		"antwort": "Alexander Graham Bell"
+	},
+	{
+		"frage": "Welches Land hat die meisten Sprachen?",
+		"antwort": "Papua-Neuguinea"
+	},
+	{
+		"frage": "Wie viele Tasten hat ein Standard-Schachbrett?",
+		"antwort": "64"
+	},
+	{
+		"frage": "Welches chemische Element hat das Symbol 'Ag'?",
+		"antwort": "Silber"
+	},
+	{
+		"frage": "Wer schrieb 'Hundert Jahre Einsamkeit'?",
+		"antwort": "Gabriel García Márquez"
+	},
+	{
+		"frage": "Welches ist das am höchsten gelegene Land der Erde?",
+		"antwort": "Bhutan"
+	},
+	{
+		"frage": "In welchem Jahr wurde die erste Herztransplantation durchgeführt?",
+		"antwort": "1967"
+	},
+	{
+		"frage": "Welcher Stern ist nach der Sonne der hellste am Nachthimmel?",
+		"antwort": "Sirius"
+	},
+	{
+		"frage": "Wer malte 'Die Persistenz der Erinnerung' (Die weichen Uhren)?",
+		"antwort": "Salvador Dalí"
+	},
+	{
+		"frage": "Welches ist das am häufigsten konsumierte Fleisch der Welt?",
+		"antwort": "Schweinefleisch"
+	},
+	{
+		"frage": "Wie viele Herzen hat ein Regenwurm?",
+		"antwort": "5"
+	},
+	{
+		"frage": "Welcher Fluss fließt durch Kairo?",
+		"antwort": "Der Nil"
+	},
+	{
+		"frage": "Wer komponierte 'Die vier Jahreszeiten'?",
+		"antwort": "Antonio Vivaldi"
+	},
+	{
+		"frage": "Welches Land hat die längste ununterbrochene Küstenlinie?",
+		"antwort": "Kanada"
+	},
+	{
+		"frage": "Wie viele Oscars gewann der Film 'Ben Hur' (1959)?",
+		"antwort": "11"
+	},
+	{
+		"frage": "Welches chemische Element hat die Ordnungszahl 13?",
+		"antwort": "Aluminium"
+	},
+	{
+		"frage": "Wer war der erste Mensch, der den Ärmelkanal durchschwamm?",
+		"antwort": "Matthew Webb"
+	},
+	{
+		"frage": "Welcher See ist der tiefste in Europa?",
+		"antwort": "Der Hornindalsvatnet in Norwegen"
+	},
+	{
+		"frage": "In welchem Jahr wurde die erste Weltmeisterschaft im Fußball ausgetragen?",
+		"antwort": "1930"
+	},
+	{
+		"frage": "Welcher Planet unseres Sonnensystems hat die kürzeste Rotationszeit?",
+		"antwort": "Jupiter"
+	},
+	{
+		"frage": "Welches ist das größte Raubtier an Land?",
+		"antwort": "Der Eisbär"
+	},
+	{
+		"frage": "Wie viele Zähne hat ein erwachsener Hund?",
+		"antwort": "42"
+	},
+	{
+		"frage": "Welcher Fluss ist der wasserreichste Europas?",
+		"antwort": "Die Wolga"
+	},
+	{
+		"frage": "Wer entdeckte das Penicillin?",
+		"antwort": "Alexander Fleming"
+	},
+	{
+		"frage": "Welches ist das am wenigsten besuchte Land der Welt?",
+		"antwort": "Tuvalu"
+	},
+	{
+		"frage": "Welches Element hat die höchste Leitfähigkeit?",
+		"antwort": "Silber"
+	},
+	{
+		"frage": "Wer schrieb 'Der alte Mann und das Meer'?",
+		"antwort": "Ernest Hemingway"
+	},
+	{
+		"frage": "Welcher Kontinent hat die geringste Bevölkerungsdichte?",
+		"antwort": "Antarktis"
+	},
+	{
+		"frage": "In welchem Jahr wurde der Euro als Bargeld eingeführt?",
+		"antwort": "2002"
+	},
+	{
+		"frage": "Welches ist das seltenste natürlich vorkommende Element auf der Erde?",
+		"antwort": "Astat"
+	},
+	{
+		"frage": "Wer malte 'Das Mädchen mit dem Perlenohrring'?",
+		"antwort": "Johannes Vermeer"
+	},
+	{
+		"frage": "Welches Land hat die meisten UNESCO-Welterbestätten?",
+		"antwort": "Italien"
+	},
+	{
+		"frage": "Welcher Fluss fließt durch Wien?",
+		"antwort": "Die Donau"
+	},
+	{
+		"frage": "Wer komponierte die Oper 'Carmen'?",
+		"antwort": "Georges Bizet"
+	},
+	{
+		"frage": "Welches ist das meistgesprochene Konstruierte Sprache der Welt?",
+		"antwort": "Esperanto"
+	},
+	{
+		"frage": "In welchem Jahr wurde die erste Briefmarke herausgegeben?",
+		"antwort": "1840"
+	},
+	{
+		"frage": "Welcher Planet wird auch 'Eisriese' genannt?",
+		"antwort": "Uranus"
+	},
+	{
+		"frage": "Wer schrieb 'Die Schatzinsel'?",
+		"antwort": "Robert Louis Stevenson"
+	},
+	{
+		"frage": "Welches ist das langsamste Säugetier?",
+		"antwort": "Das Faultier"
+	},
+	{
+		"frage": "Wie viele Knochen hat ein Hai?",
+		"antwort": "0 (Haie haben ein Knorpelskelett)"
+	},
+	{
+		"frage": "Welches chemische Element hat die Ordnungszahl 29?",
+		"antwort": "Kupfer"
+	},
+	{
+		"frage": "Wer war der erste Mensch, der den Pazifik überquerte?",
+		"antwort": "Ferdinand Magellan"
+	},
+	{
+		"frage": "Welches ist der längste Fluss in Deutschland?",
+		"antwort": "Der Rhein"
+	},
+	{
+		"frage": "In welchem Jahr wurde die erste E-Mail in Deutschland verschickt?",
+		"antwort": "1984"
+	},
+	{
+		"frage": "Welcher Musiker wird auch 'The Boss' genannt?",
+		"antwort": "Bruce Springsteen"
+	},
+	{
+		"frage": "Wie viele Muskeln hat das menschliche Auge?",
+		"antwort": "6"
+	},
+	{
+		"frage": "Welcher Berg ist der höchste in Japan?",
+		"antwort": "Mount Fuji"
+	},
+	{
+		"frage": "Wer erfand die Dampfmaschine?",
+		"antwort": "James Watt"
+	},
+	{
+		"frage": "Wie viele Kontinente gibt es auf der Erde?",
+		"antwort": "7"
+	},
+	{
+		"frage": "Welches chemische Element hat das Symbol 'Cu'?",
+		"antwort": "Kupfer"
+	},
+	{
+		"frage": "Wer schrieb 'Der Große Gatsby'?",
+		"antwort": "F. Scott Fitzgerald"
+	},
+	{
+		"frage": "Welches ist das Land mit den meisten Zeitzone?",
+		"antwort": "Frankreich (inkl. Überseegebiete)"
+	},
+	{
+		"frage": "In welchem Jahr wurde die erste Antarktis-Expedition durchgeführt?",
+		"antwort": "1820"
+	},
+	{
+		"frage": "Welcher Stern ist der hellste im Sternbild Orion?",
+		"antwort": "Rigel"
+	},
+	{
+		"frage": "Wer malte 'Die Erschaffung Adams'?",
+		"antwort": "Michelangelo"
+	},
+	{
+		"frage": "Welches ist das am häufigsten konsumierte Getränk der Welt?",
+		"antwort": "Wasser"
+	},
+	{
+		"frage": "Wie viele Zähne hat ein erwachsenes Pferd?",
+		"antwort": "36-44"
+	},
+	{
+		"frage": "Welcher Fluss fließt durch Bagdad?",
+		"antwort": "Der Tigris"
+	},
+	{
+		"frage": "Wer komponierte 'Die Moldau'?",
+		"antwort": "Bedřich Smetana"
+	},
+	{
+		"frage": "Welches Land hat die meisten aktiven Vulkane?",
+		"antwort": "Indonesien"
+	},
+	{
+		"frage": "Wie viele Oscars gewann der Film 'Schindlers Liste'?",
+		"antwort": "7"
+	},
+	{
+		"frage": "Welches chemische Element hat die Ordnungszahl 47?",
+		"antwort": "Silber"
+	},
+	{
+		"frage": "Wer war der erste Mensch, der den Mount Everest ohne zusätzlichen Sauerstoff bestieg?",
+		"antwort": "Reinhold Messner"
+	},
+	{
+		"frage": "Welcher See ist der größte in Afrika?",
+		"antwort": "Der Victoriasee"
+	},
+	{
+		"frage": "In welchem Jahr wurde die erste Computermaus erfunden?",
+		"antwort": "1964"
+	},
+	{
+		"frage": "Welcher Planet unseres Sonnensystems hat die größte Dichte?",
+		"antwort": "Erde"
+	},
+	{
+		"frage": "Wer schrieb 'Die Pest'?",
+		"antwort": "Albert Camus"
+	},
+	{
+		"frage": "Welches ist das größte Nagetier der Welt?",
+		"antwort": "Das Capybara"
+	},
+	{
+		"frage": "Wie viele Beine hat eine Spinne?",
+		"antwort": "8"
+	},
+	{
+		"frage": "Welcher Fluss ist der längste in Afrika?",
+		"antwort": "Der Nil"
+	},
+	{
+		"frage": "Wer entdeckte die Röntgenstrahlen?",
+		"antwort": "Wilhelm Conrad Röntgen"
+	},
+	{
+		"frage": "Welches ist das am meisten besuchte Land der Welt?",
+		"antwort": "Frankreich"
+	},
+	{
+		"frage": "Welches Element hat die höchste Schmelztemperatur?",
+		"antwort": "Kohlenstoff (in Form von Graphit)"
+	},
+	{
+		"frage": "Wer schrieb 'Die Verwandlung'?",
+		"antwort": "Franz Kafka"
+	},
+	{
+		"frage": "Welcher Ozean ist der kälteste?",
+		"antwort": "Der Südliche Ozean (auch Antarktischer Ozean)"
+	},
+	{
+		"frage": "In welchem Jahr wurde die Europäische Weltraumorganisation (ESA) gegründet?",
+		"antwort": "1975"
+	},
+	{
+		"frage": "Welches ist das häufigste Element in der Erdkruste?",
+		"antwort": "Sauerstoff"
+	},
+	{
+		"frage": "Wer malte 'Die Geburt der Venus'?",
+		"antwort": "Sandro Botticelli"
+	},
+	{
+		"frage": "Welches Land hat die meisten Nachbarländer?",
+		"antwort": "China und Russland (je 14)"
+	},
+	{
+		"frage": "Wie viele Rippen hat ein Mensch normalerweise?",
+		"antwort": "24 (12 Paare)"
+	},
+	{
+		"frage": "Welcher Fluss fließt durch Prag?",
+		"antwort": "Die Moldau"
+	},
+	{
+		"frage": "Wer komponierte 'Die Planeten'?",
+		"antwort": "Gustav Holst"
+	},
+	{
+		"frage": "Welches ist die meistgesprochene Gebärdensprache der Welt?",
+		"antwort": "Chinesische Gebärdensprache"
+	},
+	{
+		"frage": "In welchem Jahr wurde das erste Mobiltelefon verkauft?",
+		"antwort": "1983"
+	},
+	{
+		"frage": "Welcher Planet wird auch 'Zwillingsplanet der Erde' genannt?",
+		"antwort": "Venus"
+	},
+	{
+		"frage": "Wer schrieb 'Der Name der Rose'?",
+		"antwort": "Umberto Eco"
+	},
+	{
+		"frage": "Welches ist das kleinste Säugetier der Welt?",
+		"antwort": "Die Etruskerspitzmaus"
+	},
+	{
+		"frage": "Wie viele Flügel hat ein Schmetterling?",
+		"antwort": "4"
+	},
+	{
+		"frage": "Welches chemische Element hat die Ordnungszahl 74?",
+		"antwort": "Wolfram"
+	},
+	{
+		"frage": "Wer war der erste Europäer, der den Amazonas befuhr?",
+		"antwort": "Francisco de Orellana"
+	},
+	{
+		"frage": "Welches ist der tiefste Canyon der Welt?",
+		"antwort": "Der Yarlung Tsangpo Grand Canyon in Tibet"
+	},
+	{
+		"frage": "Welcher Komponist wird oft als 'Titan der Romantik' bezeichnet?",
+		"antwort": "Gustav Mahler"
+	},
+	{
+		"frage": "Wie viele Zähne hat ein erwachsenes Krokodil?",
+		"antwort": "60-110 (je nach Art)"
+	},
+	{
+		"frage": "Welcher Berg ist der höchste in Afrika?",
+		"antwort": "Kilimandscharo"
+	},
+	{
+		"frage": "Wer erfand den Blitzableiter?",
+		"antwort": "Benjamin Franklin"
+	},
+	{
+		"frage": "Welches Land hat die meisten Seen pro Quadratkilometer?",
+		"antwort": "Finnland"
+	},
+	{
+		"frage": "Wie viele Farben hat ein Regenbogen?",
+		"antwort": "7"
+	},
+	{
+		"frage": "Welches chemische Element hat das Symbol 'Pb'?",
+		"antwort": "Blei"
+	},
+	{
+		"frage": "Wer schrieb 'Der Prozess'?",
+		"antwort": "Franz Kafka"
+	},
+	{
+		"frage": "Welches ist das Land mit der niedrigsten Bevölkerungsdichte?",
+		"antwort": "Mongolei"
+	},
+	{
+		"frage": "In welchem Jahr wurde das erste U-Boot gebaut?",
+		"antwort": "1620"
+	},
+	{
+		"frage": "Welcher Stern ist der nächste zu unserem Sonnensystem?",
+		"antwort": "Proxima Centauri"
+	},
+	{
+		"frage": "Wer malte 'Die Nachtwache'?",
+		"antwort": "Rembrandt van Rijn"
+	},
+	{
+		"frage": "Welches ist das am häufigsten konsumierte Obst der Welt?",
+		"antwort": "Tomaten (botanisch gesehen ein Obst)"
+	},
+	{
+		"frage": "Wie viele Knochen hat ein neugeborenes Baby?",
+		"antwort": "Etwa 300"
+	},
+	{
+		"frage": "Welcher Fluss fließt durch Bangkok?",
+		"antwort": "Der Chao Phraya"
+	},
+	{
+		"frage": "Wer komponierte 'Die Unvollendete'?",
+		"antwort": "Franz Schubert"
+	},
+	{
+		"frage": "Welches Land hat die meisten Gletscher?",
+		"antwort": "Pakistan"
+	},
+	{
+		"frage": "Wie viele Oscars gewann der Film 'Forrest Gump'?",
+		"antwort": "6"
+	},
+	{
+		"frage": "Welches chemische Element hat die Ordnungszahl 22?",
+		"antwort": "Titan"
+	},
+	{
+		"frage": "Wer war der erste Mensch, der allein und nonstop die Welt umsegelte?",
+		"antwort": "Robin Knox-Johnston"
+	},
+	{
+		"frage": "Welcher See ist der älteste der Welt?",
+		"antwort": "Der Baikalsee"
+	},
+	{
+		"frage": "In welchem Jahr wurde das erste kommerzielle Passagierflugzeug eingeführt?",
+		"antwort": "1914"
+	},
+	{
+		"frage": "Welcher Planet unseres Sonnensystems hat die längste Rotationszeit?",
+		"antwort": "Venus"
+	},
+	{
+		"frage": "Wer schrieb 'Der Fremde'?",
+		"antwort": "Albert Camus"
+	},
+	{
+		"frage": "Welches ist das größte Reptil der Welt?",
+		"antwort": "Das Leistenkrokodil"
+	},
+	{
+		"frage": "Wie viele Beine hat ein Tausendfüßler tatsächlich?",
+		"antwort": "Je nach Art zwischen 30 und 354 Beinpaaren"
+	},
+	{
+		"frage": "Welcher Fluss ist der längste in Südamerika?",
+		"antwort": "Der Amazonas"
+	},
+	{
+		"frage": "Welches ist das am wenigsten bevölkerte Land Europas?",
+		"antwort": "Vatikanstadt"
+	},
+	{
+		"frage": "Welcher Architekt entwarf den Eiffelturm?",
+		"antwort": "Gustave Eiffel"
+	},
+	{
+		"frage": "In welchem Jahr wurde das erste Mal die Vier-Minuten-Grenze beim Laufen einer Meile unterschritten?",
+		"antwort": "1954"
+	},
+	{
+		"frage": "Wer erfand den Reißverschluss?",
+		"antwort": "Whitcomb L. Judson"
+	},
+	{
+		"frage": "Welcher Fluss fließt durch Warschau?",
+		"antwort": "Die Weichsel"
+	},
+	{
+		"frage": "In welchem Jahr wurde die erste kommerzielle Flugverbindung eingerichtet?",
+		"antwort": "1914"
+	},
+	{
+		"frage": "Welches ist das am tiefsten gelegene Land Afrikas?",
+		"antwort": "Dschibuti"
+	},
+	{
+		"frage": "Wer entdeckte die Radioaktivität?",
+		"antwort": "Henri Becquerel"
+	},
+	{
+		"frage": "Welches ist der größte See Südamerikas?",
+		"antwort": "Der Titicacasee"
+	},
+	{
+		"frage": "In welchem Jahr wurde der erste Nobelpreis verliehen?",
+		"antwort": "1901"
+	},
+	{
+		"frage": "Welcher Komponist schrieb die Oper 'Carmen'?",
+		"antwort": "Georges Bizet"
+	},
+	{
+		"frage": "In welchem Jahr wurde die erste Schallplatte erfunden?",
+		"antwort": "1887"
+	},
+	{
+		"frage": "Wie viele Augen hat eine Biene?",
+		"antwort": "5"
+	},
+	{
+		"frage": "Wer erfand die Mikrowelle?",
+		"antwort": "Percy Spencer"
+	},
+	{
+		"frage": "Welcher Fluss fließt durch Florenz?",
+		"antwort": "Der Arno"
+	},
+	{
+		"frage": "In welchem Jahr wurde die erste Olympiade der Neuzeit abgehalten?",
+		"antwort": "1896"
+	},
+	{
+		"frage": "Wer entwickelte die Theorie der Psychoanalyse?",
+		"antwort": "Sigmund Freud"
+	},
+	{
+		"frage": "Welches ist der längste Fluss Italiens?",
+		"antwort": "Der Po"
+	},
+	{
+		"frage": "In welchem Jahr wurde die erste Kreditkarte eingeführt?",
+		"antwort": "1950"
+	},
+	{
+		"frage": "In welchem Jahr wurde die erste Tageszeitung veröffentlicht?",
+		"antwort": "1650 in Leipzig"
+	},
+	{
+		"frage": "Wie viele Zehen hat ein Straußenvogel?",
+		"antwort": "2 pro Fuß"
+	},
+	{
+		"frage": "Wer erfand den Kompass?",
+		"antwort": "Die alten Chinesen (ca. 200 v. Chr.)"
+	},
+	{
+		"frage": "Welcher Fluss fließt durch Dresden?",
+		"antwort": "Die Elbe"
+	},
+	{
+		"frage": "In welchem Jahr wurde das erste Mobiltelefon der Welt vorgestellt?",
+		"antwort": "1973"
+	},
+	{
+		"frage": "Welches ist das meistbesuchte Kunstmuseum der Welt?",
+		"antwort": "Der Louvre in Paris"
+	},
+	{
+		"frage": "Wer entwickelte die erste erfolgreiche Impfung gegen Tollwut?",
+		"antwort": "Louis Pasteur"
+	},
+	{
+		"frage": "Welches ist der höchste Wasserfall Europas?",
+		"antwort": "Der Vinnufossen in Norwegen"
+	},
+	{
+		"frage": "Welcher Komponist schrieb die Oper 'Aida'?",
+		"antwort": "Giuseppe Verdi"
+	},
+	{
+		"frage": "In welchem Jahr wurde das erste U-Boot in Dienst gestellt?",
+		"antwort": "1900"
+	},
+	{
+		"frage": "Wie viele Tasten hat ein Standardakkordeon?",
+		"antwort": "120"
+	},
+	{
+		"frage": "Welches ist das einzige Säugetier, das seinen Hals nicht drehen kann?",
+		"antwort": "Das Schwein"
+	},
+	{
+		"frage": "Wer erfand den Heißluftballon?",
+		"antwort": "Die Brüder Montgolfier"
+	},
+	{
+		"frage": "Welcher Fluss fließt durch München?",
+		"antwort": "Die Isar"
+	},
+	{
+		"frage": "In welchem Jahr wurde die erste Polaroidkamera vorgestellt?",
+		"antwort": "1948"
+	},
+	{
+		"frage": "Welches ist das älteste noch existierende Café der Welt?",
+		"antwort": "Café Procope in Paris (eröffnet 1686)"
+	},
+	{
+		"frage": "Wer entwickelte die erste programmierbare Rechenmaschine?",
+		"antwort": "Charles Babbage"
+	},
+	{
+		"frage": "Welches ist der tiefste Punkt der Erde auf dem Festland?",
+		"antwort": "Das Tote Meer"
+	},
+	{
+		"frage": "Welcher Komponist ist bekannt für seine \"Ungarischen Rhapsodien\"?",
+		"antwort": "Franz Liszt"
+	},
+	{
+		"frage": "In welchem Jahr wurde die Mona Lisa aus dem Louvre gestohlen?",
+		"antwort": "1911"
+	},
+	{
+		"frage": "Wie viele Tasten hat eine Konzertharfe üblicherweise?",
+		"antwort": "47"
+	},
+	{
+		"frage": "Welches ist das älteste noch bestehende Olympische Sportereignis?",
+		"antwort": "Der Marathonlauf"
+	},
+	{
+		"frage": "In welchem Jahr wurde die erste Ausgabe der \"Times\" in London veröffentlicht?",
+		"antwort": "1788"
+	},
+	{
+		"frage": "Wie viele Herzkammern hat ein Krokodil?",
+		"antwort": "4"
+	},
+	{
+		"frage": "Wer schrieb das Theaterstück \"Warten auf Godot\"?",
+		"antwort": "Samuel Beckett"
+	},
+	{
+		"frage": "Welcher Fluss fließt durch New Orleans?",
+		"antwort": "Der Mississippi"
+	},
+	{
+		"frage": "Welches ist das kleinste Knochen im menschlichen Körper?",
+		"antwort": "Der Steigbügel im Ohr"
+	},
+	{
+		"frage": "Wie viele Sinne hat der Mensch nach heutigem Wissensstand?",
+		"antwort": "Fünf"
+	},
+	{
+		"frage": "Welcher Fluss fließt durch Sankt Petersburg?",
+		"antwort": "Die Newa"
+	},
+	{
+		"frage": "Welches ist das längste Wort in der deutschen Sprache?",
+		"antwort": "Donaudampfschifffahrtsgesellschaftskapitän"
+	},
+	{
+		"frage": "Welches ist das längste Tier der Welt?",
+		"antwort": "Die Qualle Lionsmane (bis zu 37 Meter lang)"
+	},
+	{
+		"frage": "Welcher Fluss fließt durch Hamburg?",
+		"antwort": "Die Elbe"
+	},
+	{
+		"frage": "In welchem Jahr wurde die Magna Carta unterzeichnet?",
+		"antwort": "1215"
+	},
+	{
+		"frage": "In Belgien wird die Sprache Belgisch gesprochen. Wahr oder Falsch?",
+		"antwort": "Falsch"
+	},
+	{
+		"frage": "Was ist die 1. Vergangenheit des englischen Verbes 'go'?",
+		"antwort": "went"
+	},
+	{
+		"frage": "Wie viel Bundesländer hat Deutschland?",
+		"antwort": "16"
+	},
+	{
+		"frage": "Wie viel Kubikzentimeter sind ein halber Liter?",
+		"antwort": "500"
+	},
+	{
+		"frage": "Was ist die Hauptstadt von Panama?",
+		"antwort": "Panama City"
+	},
+	{
+		"frage": "Wie heißen die zwei größten Inseln Italiens?",
+		"antwort": "Sizilien und Sardinien"
+	},
+	{
+		"frage": "Zebras werden ohne Streifen geboren. Wahr oder Falsch?",
+		"antwort": "Falsch"
+	},
+	{
+		"frage": "Putin ist Mitautor eines Fachbuches über welche Kampfsportart?",
+		"antwort": "Judo"
+	},
+	{
+		"frage": "Wofür steht die Abkürzung DIY?",
+		"antwort": "Do it yourself"
+	},
+	{
+		"frage": "An wie viele Länder grenzt Deutschland?",
+		"antwort": "9"
+	},
+	{
+		"frage": "Wie heißt die südamerikanische Stadt in der Papst Franziskus geboren ist?",
+		"antwort": "Buenos Aires"
+	},
+	{
+		"frage": "Wie heißt der Sänger der unter anderem 'Temperature' und 'She doesn´t mind'?",
+		"antwort": "Sean Paul"
+	},
+	{
+		"frage": "Der Kuckuck legt seine Eier in fremde Nester. Wahr oder Falsch?",
+		"antwort": "wahr"
+	},
+	{
+		"frage": "Welcher nordische Gott trägt einen Hammer und ist der Sohn von Odin?",
+		"antwort": "Thor"
+	},
+	{
+		"frage": "Küchenschaben stammen von Dinosauriern ab. Richtig oder Falsch?",
+		"antwort": "Falsch"
+	},
+	{
+		"frage": "Vervollständige das Sprichwort: 'Auch ein blindes Huhn……'?",
+		"antwort": "….. findest mal ein Korn”"
+	},
+	{
+		"frage": "Wie heißen die Neffen von Donald Duck?",
+		"antwort": "Tick, Trick und Track"
+	},
+	{
+		"frage": "Mit wem tanzt der Gorilla in dem Lied 'Der Gorilla mit der Sonnenbrille'?",
+		"antwort": "Sybille"
+	},
+	{
+		"frage": "In welcher Italienischen Stadt steht der berühmte schiefe Turm?",
+		"antwort": "Pisa"
+	},
+	{
+		"frage": "Wo geht die Sonne unter?",
+		"antwort": "Westen"
+	},
+	{
+		"frage": "In welcher Zeitepoche lebten die Ritter?",
+		"antwort": "Mittelalter"
+	},
+	{
+		"frage": "Wie nennt man die Schwester der Mutter?",
+		"antwort": "Tante"
+	},
+	{
+		"frage": "Jeder Tiger hat eine einzigartige Fellmusterung. Richtig oder Falsch?",
+		"antwort": "Richtig"
+	},
+	{
+		"frage": "In welcher Stadt steht die Freiheitsstatue?",
+		"antwort": "New York"
+	},
+	{
+		"frage": "Wie viele Beine haben 3 Spinnen zusammen?",
+		"antwort": "24"
+	},
+	{
+		"frage": "Gegen wen treten die TV-Moderatoren in der Sendung 'Duell um die Welt an'?",
+		"antwort": "Gegeneinander"
+	},
+	{
+		"frage": "Wie heißen die Freunde von Pippi Langstrumpf?",
+		"antwort": "Thomas und Annika"
+	},
+	{
+		"frage": "Wie heißt die japanische Videospielfirma die zunächst Spielkarten herstellte?",
+		"antwort": "Nintendo"
+	},
+	{
+		"frage": "Wie viele Zeitzonen hat Deutschland?",
+		"antwort": "1"
+	},
+	{
+		"frage": "Wie heißt die Hauptstadt von Frankreich?",
+		"antwort": "Paris"
+	},
+	{
+		"frage": "Wofür steht bei einem Hautpflegeprodukt die Abkürzung 'LSF'?",
+		"antwort": "Lichtschutzfaktor"
+	},
+	{
+		"frage": "Welche Uhrzeit ist in Sydney (Australien) wenn es in Deutschland 12 Uhr Mittags ist?",
+		"antwort": "22 Uhr"
+	},
+	{
+		"frage": "Laut einem Werbespruch sollte man bei 'Technikfragen…..' wen fragen?",
+		"antwort": "Technick"
+	},
+	{
+		"frage": "Welche Computerfirma wurde 1976 von Steve Wolzeniak mitgegründet?",
+		"antwort": "Apple"
+	},
+	{
+		"frage": "Von welcher Stadt ist der Eifelturm das Wahrzeichen?",
+		"antwort": "Paris"
+	},
+	{
+		"frage": "Wie viele Kanten hat eine quadratische Pyramide?",
+		"antwort": "8"
+	},
+	{
+		"frage": "Kamelbabys werden ohne Höcker geboren. Richtig oder Falsch?",
+		"antwort": "Richtig"
+	},
+	{
+		"frage": "Der Hebesatz ist ein physikalisches Gesetz. Richtig oder Falsch?",
+		"antwort": "Falsch"
+	},
+	{
+		"frage": "Wo wachsen Perlen?",
+		"antwort": "In Muscheln"
+	},
+	{
+		"frage": "Wie viel Tor-Durchgänge hat das Brandenburger Tor?",
+		"antwort": "5"
+	},
+	{
+		"frage": "Wenn heute Mittwoch ist welcher Wochentag ist in drei Tagen?",
+		"antwort": "Samstag"
+	},
+	{
+		"frage": "Welche Galaxie ist unserer Milchstraße am nächsten?",
+		"antwort": "Andromeda-Galaxie"
+	},
+	{
+		"frage": "Was ist die Hauptstadt von NRW?",
+		"antwort": "Düsseldorf"
+	},
+	{
+		"frage": "Welche Haiart hat einen Rundumblick von fast 360°?",
+		"antwort": "Hammerhai"
+	},
+	{
+		"frage": "Wer moderierte die bekannte TV Show 'Wer wird Millionär'?",
+		"antwort": "Günther Jauch"
+	},
+	{
+		"frage": "Glurak ist begeherteste Karte in einem Sammelkartenspiel aus welchem japanischen Videospiel stammt die Figur?",
+		"antwort": "Pokemon"
+	},
+	{
+		"frage": "Wie heißen die Mexikanischen Maischips?",
+		"antwort": "Nachos"
+	},
+	{
+		"frage": "Der Schuhschnabel frisst Schlangen und Babykrokodile. Richtig oder Falsch?",
+		"antwort": "Richtig"
+	},
+	{
+		"frage": "In welcher Sportart kann mit einem Acid drop in eine Halfpipe springen?",
+		"antwort": "Skaten"
+	},
+	{
+		"frage": "Was ist die Hauptstadt von Ungarn?",
+		"antwort": "Budapest"
+	},
+	{
+		"frage": "Was ist die nächst Größte Flächeneinheit nach Quadratzentimeter?",
+		"antwort": "Quadratdezimeter"
+	},
+	{
+		"frage": "Wie heißt die europäische Stadt in der jährliche das Volksfest mit den weltweit höchsten Besucherzahlen sattfindet?",
+		"antwort": "München"
+	},
+	{
+		"frage": "Was ist neben Zucker die Hauptzutat von Marzipan?",
+		"antwort": "Mandeln"
+	},
+	{
+		"frage": "Welche Zahl repräsentiert die Römische Zahl L?",
+		"antwort": "50"
+	},
+	{
+		"frage": "Welches ist das leichteste chemische Element?",
+		"antwort": "Wasserstoff"
+	},
+	{
+		"frage": "Wie viele Zacken hat eine Kuchengabel üblicherweise?",
+		"antwort": "3"
+	},
+	{
+		"frage": "Aus welchem Land kommt die Band ACDC?",
+		"antwort": "Australien"
+	},
+	{
+		"frage": "Was ist die am häufigsten gegessene Frucht der Welt?",
+		"antwort": "Mango"
+	},
+	{
+		"frage": "Reebok war eine Marke von Adidas. Richtig oder Falsch?",
+		"antwort": "Richtig"
+	},
+	{
+		"frage": "Wie heißt der tiefste Punkt im pazifischen Ozean?",
+		"antwort": "Marianengraben"
+	},
+	{
+		"frage": "Was verwendet man um chemische Elemente darzustellen?",
+		"antwort": "Periodensystem"
+	},
+	{
+		"frage": "Haribo gehörte einst mal zu Nestle. Richtig oder Falsch?",
+		"antwort": "Falsch"
+	},
+	{
+		"frage": "Wenn ein britischer Taxifahrer Gäste im Wagen hat ist er von der Anschnallpflicht befreit. Richtig oder Falsch?",
+		"antwort": "Richtig"
+	},
+	{
+		"frage": "Wie viele Cent Münzen braucht man mindestens um 69 ct zu bilden?",
+		"antwort": "5"
+	},
+	{
+		"frage": "In welcher fiktiven Stadt spielt Gta 4?",
+		"antwort": "Liberty City"
+	},
+	{
+		"frage": "Welcher Buchstabe ist bei einem amerikanischem Tastaturlayout an der gleichen Stelle wo bei der deutschen das “Z” ist?",
+		"antwort": "Y"
+	},
+	{
+		"frage": "Wie viele unterschiedliche Centmünzen gibt es?",
+		"antwort": "6"
+	},
+	{
+		"frage": "Wenn sich ein Zug mit 100 km/h fortbewegt nach wie vielen Minuten hat er 50 km zurückgelegt?",
+		"antwort": "Nach 30 min"
+	},
+	{
+		"frage": "Welcher Fahrer wurde 2021 Formel 1 Weltmeister?",
+		"antwort": "Max Verstappen"
+	},
+	{
+		"frage": "In welchem Jahrhundert wurde die Glühbirne erfunden?",
+		"antwort": "19."
+	},
+	{
+		"frage": "Wie heißt ein bekannter Werbespruch von Ferrero Duplo?",
+		"antwort": "Die längste Praline der Welt"
+	},
+	{
+		"frage": "In welcher Stadt steht der höchste Kirchturm der Welt?",
+		"antwort": "Ulm"
+	},
+	{
+		"frage": "Wie heißt die Schnecke von SpongeBob?",
+		"antwort": "Gary"
+	},
+	{
+		"frage": "Welche Verschwörungstheorie gibt es seit dem 20. Juli 1969?",
+		"antwort": "Die Mondlandung fand nie statt"
+	},
+	{
+		"frage": "Der Hund von Peanuts heißt?",
+		"antwort": "Snoopy"
+	},
+	{
+		"frage": "Eine Rotfeder ist eine Vogelart. Richtig oder Falsch?",
+		"antwort": "Falsch"
+	},
+	{
+		"frage": "Wie heißt die in Köln jährlich stattfindende Messe für Computerspiele?",
+		"antwort": "Gamescom"
+	},
+	{
+		"frage": "Wie nennt der Hamburger das große Volksfest Nähe der Reeperbahn?",
+		"antwort": "Hamburger Dom"
+	},
+	{
+		"frage": "Die Antarktis war früher ein tropisches Land mit üppiger Vegetation. Richtig oder Falsch?",
+		"antwort": "Richtig"
+	},
+	{
+		"frage": "Wie nennt man Magma bei einem Vulkanausbruch?",
+		"antwort": "Lava"
+	},
+	{
+		"frage": "Wann wird der Tag der deutschen Einheit gefeiert?",
+		"antwort": "3. Oktober"
+	},
+	{
+		"frage": "Wie heißt das Land, das den meisten Käse produziert?",
+		"antwort": "USA"
+	},
+	{
+		"frage": "Die Stechpalme ist ein Nadelbaum. Richtig oder Falsch?",
+		"antwort": "Richtig"
+	},
+	{
+		"frage": "Welcher Komponist schrieb die kleine Nachtmusik?",
+		"antwort": "Mozart"
+	},
+	{
+		"frage": "Wie lange dauerte der 30-jährige Krieg?",
+		"antwort": "30 Jahre"
+	},
+	{
+		"frage": "Durch welches Tier werden Delfine High?",
+		"antwort": "Kugelfische"
+	},
+	{
+		"frage": "Die Häkel- und Stricknadel ist identisch. Richtig oder Falsch?",
+		"antwort": "Falsch"
+	},
+	{
+		"frage": "Welche ist die meistverkaufte Spielekonsole?",
+		"antwort": "PS2"
+	},
+	{
+		"frage": "In welchem Jahr fiel die Berliner Mauer?",
+		"antwort": "1989"
+	},
+	{
+		"frage": "Der Satz des Pythagoras kam vom Philosophen Pythagoras. Richtig oder Falsch?",
+		"antwort": "Richtig"
+	},
+	{
+		"frage": "Wie heißt der beste Freund der Biene Maya?",
+		"antwort": "Willy"
+	},
+	{
+		"frage": "Wie nennt man ein kugelförmiges Schneehaus?",
+		"antwort": "Iglu"
+	},
+	{
+		"frage": "Wie heißt das Finale der American-Football-Profi-Liga?",
+		"antwort": "Super Bowl"
+	},
+	{
+		"frage": "Ab wie viel Grad kocht Wasser bei Normaldruck?",
+		"antwort": "100° Celsius"
+	},
+	{
+		"frage": "Wie nennt man Vögel, die im Winter in den Süden fliegen?",
+		"antwort": "Zugvögel"
+	},
+	{
+		"frage": "Was ist die Wurzel aus 9?",
+		"antwort": "3"
+	},
+	{
+		"frage": "Vervollständige das Sprichwort: “Hunde, die bellen……?",
+		"antwort": "… beißen nicht"
+	},
+	{
+		"frage": "Nenne die Hauptstadt von Japan?",
+		"antwort": "Tokyo"
+	},
+	{
+		"frage": "Mit welcher noch nicht ausgestorbenen Tier-Rasse sind die Dinosaurier am engsten verwandt?",
+		"antwort": "Vögel"
+	},
+	{
+		"frage": "Wofür steht die Abkürzung PNG?",
+		"antwort": "Portable Network Graphics"
+	},
+	{
+		"frage": "Wie viele Menschen werden benötigt, um ein autonom fahrendes Fahrzeug zu steuern?",
+		"antwort": "0"
+	},
+	{
+		"frage": "Was ist das schnellste Säugetier der Welt?",
+		"antwort": "Gepard"
+	},
+	{
+		"frage": "Wie heißt die Hauptstadt der Slowakei?",
+		"antwort": "Bratislava"
+	},
+	{
+		"frage": "Wie viele Zähne hat ein erwachsener Mensch normalerweise?",
+		"antwort": "32"
+	},
+	{
+		"frage": "Wie hoch ist die Mehrwertsteuer in Deutschland?",
+		"antwort": "7 / 19"
+	},
+	{
+		"frage": "Wie lautet die Quersumme aus 362?",
+		"antwort": "11"
+	},
+	{
+		"frage": "Die Freiheitsstatue war ein Geschenk von?",
+		"antwort": "Frankreich"
+	},
+	{
+		"frage": "Wie lautet das Mindestalter um sich für den Autoführerschein anzumelden?",
+		"antwort": "16,5"
+	},
+	{
+		"frage": "Wie viele Punkte in Flensburg darf deine Person für begleitendes Fahren BF17 haben?",
+		"antwort": "1"
+	},
+	{
+		"frage": "Wo befindet sich das Taj Mahal?",
+		"antwort": "Indien"
+	},
+	{
+		"frage": "Warum gibt es genau sieben Weltwunder?",
+		"antwort": "Die Zahl sieben galt in der Antike als heilig."
+	},
+	{
+		"frage": "Wo befanden sich die hängenden Gärten der Semiramis?",
+		"antwort": "Babylon"
+	},
+	{
+		"frage": "Wie viele der sieben antiken Weltwunder sind noch heute zu bewundern?",
+		"antwort": "1"
+	},
+	{
+		"frage": "Wo findet man die Pyramiden von Gizeh?",
+		"antwort": "Ägypten"
+	},
+	{
+		"frage": "Wie nennt sich der mythologische griechische Götterbote?",
+		"antwort": "Hermes"
+	},
+	{
+		"frage": "Wie heißt der weltweit längste Fluss?",
+		"antwort": "Der Nil in Ägypten mit 6.650 Kilometern."
+	},
+	{
+		"frage": "Wer war der wahre Vater der Elektrizität?",
+		"antwort": "Nikola Tesla"
+	},
+	{
+		"frage": "Welche Farben hat die mexikanische Flagge?",
+		"antwort": "Grün, Weiß und Rot"
+	},
+	{
+		"frage": "Wie heißen die Söhne von Donald Duck?",
+		"antwort": "Er hat keine"
+	},
+	{
+		"frage": "Welche Farbe hat das WhatsApp Logo?",
+		"antwort": "Grün"
+	},
+	{
+		"frage": "Wie heißt die Hauptstadt von Island?",
+		"antwort": "Reykjavik"
+	},
+	{
+		"frage": "Wie lange dauert ein Fußballspiel in der Regel?",
+		"antwort": "90"
+	},
+	{
+		"frage": "Kennst du das einzige Säugetier, das fliegen kann?",
+		"antwort": "Die Fledermaus."
+	},
+	{
+		"frage": "Welches Tier ist das größte der Welt?",
+		"antwort": "Blauwal"
+	},
+	{
+		"frage": "Wo befindet sich der menschliche Knochen?",
+		"antwort": "Ohr"
+	},
+	{
+		"frage": "Wie viele Herzen hat ein Krake?",
+		"antwort": "3 Herzen"
+	},
+	{
+		"frage": "Welches ist das siebte Weltwunder der Neuzeit?",
+		"antwort": "Chichen Itza"
+	},
+	{
+		"frage": "Wie heißt der Autor des Buches 'Eine kurze Geschichte der Zeit'?",
+		"antwort": "Stephen Hawking"
+	},
+	{
+		"frage": "Was ist die meist gesprochene Sprache in Indien?",
+		"antwort": "Hindi"
+	},
+	{
+		"frage": "Von wem wird der Bundespräsident gewählt?",
+		"antwort": "Bundesversammlung"
+	},
+	{
+		"frage": "Was bedeutet Thomas Hobbes Aussage: 'Homo homini Lupus'?",
+		"antwort": "Der Mensch ist des Menschen Wolf"
+	},
+	{
+		"frage": "Was ist ein Sonett?",
+		"antwort": "Eine Form des Gedichts"
+	},
+	{
+		"frage": "In welchem Land wurde das erste Emoji erfunden?",
+		"antwort": "Japan"
+	},
+	{
+		"frage": "Welches Tier ist das Wappentier von Schottland?",
+		"antwort": "Einhorn"
+	},
+	{
+		"frage": "Wie nennt man den kleinsten Knochen im menschlichen Körper?",
+		"antwort": "Steigbügel"
+	},
+	{
+		"frage": "Welche Frucht hat die meisten Kalorien pro 100 Gramm?",
+		"antwort": "Avocado"
+	},
+	{
+		"frage": "Wie viele Herzen hat ein Oktopus?",
+		"antwort": "3"
+	},
+	{
+		"frage": "Was war der ursprüngliche Name von Google?",
+		"antwort": "Backrub"
+	},
+	{
+		"frage": "In welchem Jahr wurde der erste Harry-Potter-Roman veröffentlicht?",
+		"antwort": "1997"
+	},
+	{
+		"frage": "Welches Land hat die älteste Nationalflagge der Welt?",
+		"antwort": "Dänemark"
+	},
+	{
+		"frage": "Was ist das meistverkaufte Musikalbum aller Zeiten?",
+		"antwort": "Thriller von Michael Jackson"
+	},
+	{
+		"frage": "Welches Unternehmen hat den ersten kommerziellen Mikroprozessor entwickelt?",
+		"antwort": "Intel"
+	},
+	{
+		"frage": "Wie heißt der Roboter aus dem Film 'Robocop'?",
+		"antwort": "ED-209"
+	},
+	{
+		"frage": "Welcher Planet unseres Sonnensystems rotiert am schnellsten?",
+		"antwort": "Jupiter"
+	},
+	{
+		"frage": "Was ist das chemische Symbol für das Element Plutonium?",
+		"antwort": "Pu"
+	},
+	{
+		"frage": "Wie viele Ringe hat das olympische Symbol?",
+		"antwort": "5"
+	},
+	{
+		"frage": "Welcher Schauspieler spielte den Hauptcharakter in 'Die Verurteilten'?",
+		"antwort": "Tim Robbins"
+	},
+	{
+		"frage": "Was ist die höchste jemals gemessene Temperatur auf der Erde?",
+		"antwort": "56,7 Grad Celsius"
+	},
+	{
+		"frage": "In welchem Jahr wurde das erste iPhone auf den Markt gebracht?",
+		"antwort": "2007"
+	},
+	{
+		"frage": "Welcher Künstler malte die 'Mona Lisa'?",
+		"antwort": "Leonardo da Vinci"
+	},
+	{
+		"frage": "Wie heißt der erste Mensch, der im Weltraum war?",
+		"antwort": "Juri Gagarin"
+	},
+	{
+		"frage": "Welche Automarke hat das Modell 'Beetle' produziert?",
+		"antwort": "Volkswagen"
+	},
+	{
+		"frage": "Was ist das schwerste natürliche Element im Periodensystem?",
+		"antwort": "Uran"
+	},
+	{
+		"frage": "Welcher Superheld ist bekannt als 'der Mann aus Stahl'?",
+		"antwort": "Superman"
+	},
+	{
+		"frage": "In welcher Stadt findet das jährliche Filmfestival von Cannes statt?",
+		"antwort": "Cannes"
+	},
+	{
+		"frage": "Welches Tier kann am längsten ohne Wasser überleben?",
+		"antwort": "Kängururatte"
+	},
+	{
+		"frage": "Welcher Musiker ist bekannt für die Hits 'Purple Rain' und 'Kiss'?",
+		"antwort": "Prince"
+	},
+	{
+		"frage": "Wie viele Zehen hat ein Elefant?",
+		"antwort": "18"
+	},
+	{
+		"frage": "Welches Unternehmen stellte den ersten tragbaren Musik-Player her?",
+		"antwort": "Sony (Walkman)"
+	},
+	{
+		"frage": "In welcher Stadt steht das berühmte Opernhaus mit einer einzigartigen Architektur?",
+		"antwort": "Sydney"
+	},
+	{
+		"frage": "Wie heißt die berühmte Straße in Los Angeles, die für ihre Musik- und Filmindustrie bekannt ist?",
+		"antwort": "Hollywood Boulevard"
+	},
+	{
+		"frage": "Welches Land liegt am Äquator und hat Pinguine in der freien Natur?",
+		"antwort": "Ecuador"
+	},
+	{
+		"frage": "Was ist schwerer: Ein Kilogramm Federn oder ein Kilogramm Steine?",
+		"antwort": "Beide wiegen gleich viel"
+	},
+	{
+		"frage": "Wie viele Monate im Jahr haben 28 Tage?",
+		"antwort": "Alle 12 Monate"
+	},
+	{
+		"frage": "Welcher Kontinent liegt im Süden von Australien?",
+		"antwort": "Antarktis"
+	},
+	{
+		"frage": "Wie viele Sekunden hat eine Minute, wenn eine Stunde 120 Minuten hat?",
+		"antwort": "60 Sekunden"
+	},
+	{
+		"frage": "Welche Farbe hat der Himmel auf dem Mars?",
+		"antwort": "Rosa bis rötlich"
+	},
+	{
+		"frage": "Was war zuerst da, das Huhn oder das Ei?",
+		"antwort": "Das Ei (evolutionär gesehen)"
+	},
+	{
+		"frage": "Wie viele Buchstaben hat das Alphabet?",
+		"antwort": "26"
+	},
+	{
+		"frage": "Wenn ein Flugzeug in der Mitte von Australien abstürzt, in welchem Land begräbt man die Überlebenden?",
+		"antwort": "Man begräbt keine Überlebenden"
+	},
+	{
+		"frage": "Welches Wort wird immer falsch geschrieben?",
+		"antwort": "'falsch'"
+	},
+	{
+		"frage": "Wenn ein Zug eine Geschwindigkeit von 100 km/h hat und 50 km zurücklegt, wie lange hat er dafür gebraucht?",
+		"antwort": "30 Minuten"
+	},
+	{
+		"frage": "Wie viele Tiere von jeder Art nahm Moses mit auf die Arche?",
+		"antwort": "Keine, es war Noah"
+	},
+	{
+		"frage": "Wie viele Erbsen passen in einen leeren Sack?",
+		"antwort": "Eine, danach ist er nicht mehr leer"
+	},
+	{
+		"frage": "Was ist das Gegenteil von einem Koala?",
+		"antwort": "Ein Dis-Koala"
+	},
+	{
+		"frage": "Wie viele Monate haben 30 Tage?",
+		"antwort": "4 (April, Juni, September, November)"
+	},
+	{
+		"frage": "Wie viele Finger hat eine Hand?",
+		"antwort": "4 Finger und 1 Daumen"
+	},
+	{
+		"frage": "Was passiert, wenn man in einen Spiegel schaut und der Spiegel bricht?",
+		"antwort": "Man sieht viele Spiegelbilder"
+	},
+	{
+		"frage": "Welcher Planet ist bekannt als der Rote Planet?",
+		"antwort": "Mars"
+	},
+	{
+		"frage": "Wie viele Beine hat ein Tausendfüßler?",
+		"antwort": "Es variiert, aber nie tausend"
+	},
+	{
+		"frage": "Wie viele Weihnachtsbäume werden in Deutschland pro Jahr verkauft?",
+		"antwort": "Etwa 30 Millionen."
+	},
+	{
+		"frage": "Wie viele Liter Bier werden in Deutschland pro Kopf jährlich getrunken?",
+		"antwort": "100 Liter Bier."
+	},
+	{
+		"frage": "Wie lang ist der Begattungsapparat der 15 cm langen Bananenschnecke?",
+		"antwort": "Circa 80 cm, das entspricht 550 Prozent der Körpergröße."
+	},
+	{
+		"frage": "Wie viele Buchstaben hat das hawaiianische Alphabet?",
+		"antwort": "12"
+	},
+	{
+		"frage": "Wie viele Einkerbungen hat ein Golfball?",
+		"antwort": "336"
+	},
+	{
+		"frage": "Im Laufe eines 60 Jährigen Lebens hat ein Mann durchschnittlich wie lange eine Erektion während er schläft?",
+		"antwort": "5 Jahre"
+	},
+	{
+		"frage": "Wie lange dauert der 30-jährige Krieg?",
+		"antwort": "30 Jahre"
+	},
+	{
+		"frage": "Einige Monate haben 30, einige 31 Tage. Wie viele haben 28 Tage?",
+		"antwort": "Alle – jeder Monat hat mindestens 28 Tage."
+	},
+	{
+		"frage": "Ein Bauer hat 16 Schafe. Fast alle sterben, außer 9. Wie viele Schafe bleiben übrig?",
+		"antwort": "9 Schafe"
+	},
+	{
+		"frage": "Du hast eine gefüllte Streichholzschachtel und kommst in einen leeren, kalten Raum, in dem sich nur ein Kohleofen, eine Petroleumlampe und ein Kamin steht. Was zündest du zuerst an?",
+		"antwort": "Das Streichholz"
+	},
+	{
+		"frage": "Du bist Busfahrer. An der 1. Haltestelle steigen 5 Gäste ein. An der 2. Haltestelle steigen 3 Leute zu und 2 aus. An der 3. Haltestelle steigen 4 ein und 5 aus. Wie alt ist der Busfahrer?",
+		"antwort": "So alt wie der Befragte – er ist ja der Busfahrer."
+	},
+	{
+		"frage": "Was antwortet in allen Sprachen? Was spricht ohne Mund? Was hört ohne Ohren?",
+		"antwort": "Das Echo."
+	},
+	{
+		"frage": "Wie nennt man die Steigerung von Buchstabensuppe?",
+		"antwort": "Wörter-See."
+	},
+	{
+		"frage": "Welche Vögel legen niemals Eier?",
+		"antwort": "Männliche Vögel."
+	},
+	{
+		"frage": "In welchen Zug passt nur ein Mensch, egal wie man sich anstrengt?",
+		"antwort": "In den Anzug!"
+	},
+	{
+		"frage": "Wie kastriert man einen Kühlschrank?",
+		"antwort": "Tür auf, Eier raus, Tür zu!"
+	},
+	{
+		"frage": "Was schwimmt in einem See und fängt mit Z an?",
+		"antwort": "Zwei Enten."
+	},
+	{
+		"frage": "Was ist 12 cm lang und macht dick?",
+		"antwort": "Duplo – oder was hast Du gedacht?"
+	},
+	{
+		"frage": "Wie heißt ein Kölner Gott mit einem Buchstaben?",
+		"antwort": "J (Jott)"
+	},
+	{
+		"frage": "Wo ist der Karpaltunnel?",
+		"antwort": "Das ist kein Verkehrstunnel, sondern eine Knochenrinne der Hand, durch die Sehnen und Nerven laufen."
+	},
+	{
+		"frage": "Wie heißt ein Bumerang, der nach dem Werfen nicht zurückkommt?",
+		"antwort": "Holzstock"
+	},
+	{
+		"frage": "Wer war während des 2. Weltkriegs US-Präsident?",
+		"antwort": "Roosevelt"
+	},
+	{
+		"frage": "Was bezeichnet die chemische Formel „C6H12O6“?",
+		"antwort": "Glucose"
+	},
+	{
+		"frage": "Nenne die 4 Basen der DNA.?",
+		"antwort": "Adenin, Cytosin, Guanin, Thymin"
+	},
+	{
+		"frage": "Welcher ist der „rote Planet“ unseres Sonnensystems?",
+		"antwort": "Der Mars"
+	},
+	{
+		"frage": "Wie heißt die Hauptstadt von Burkina Faso?",
+		"antwort": "Ouagadougou"
+	},
+	{
+		"frage": "Welcher Planet unseres Sonnensystems ist der Sonne am nächsten?",
+		"antwort": "Merkur"
+	},
+	{
+		"frage": "Welches ist die einzige Region Frankreichs, in der für Züge Rechtsverkehr gilt?",
+		"antwort": "Elsass-Lothringen"
+	},
+	{
+		"frage": "Welches Land ist flächenmäßig das zweitgrößte der Erde?",
+		"antwort": "Kanada"
+	},
+	{
+		"frage": "In welcher Stadt wurden die Olympischen Spiele 2000 ausgetragen?",
+		"antwort": "Sydney"
+	},
+	{
+		"frage": "Welches ist das einzige deutsche Bundesland, in dem keine kreisfreie Stadt existiert?",
+		"antwort": "Saarland"
+	},
+	{
+		"frage": "Welcher ist der längste Fluss der Welt?",
+		"antwort": "Amazonas"
+	},
+	{
+		"frage": "Welches ist die größte Stadt der Welt?",
+		"antwort": "Mexiko-Stadt"
+	},
+	{
+		"frage": "Welche Farbe hat das Blut von Perlbooten?",
+		"antwort": "Blau"
+	},
+	{
+		"frage": "Wie heißt die Hauptstadt von Brasilien?",
+		"antwort": "Brasilia"
+	},
+	{
+		"frage": "Aus wie vielen Kräutern ist Jägermeister gemacht?",
+		"antwort": "56"
+	},
+	{
+		"frage": "Wie viele Knochen hat ein Erwachsenenkörper?",
+		"antwort": "206"
+	},
+	{
+		"frage": "Wie lange hat Goethe an seinem „Faust“ gearbeitet?",
+		"antwort": "64 Jahre!"
+	},
+	{
+		"frage": "Wie viele Tasten hat ein Klavier?",
+		"antwort": "88"
+	},
+	{
+		"frage": "Mit wie vielen Figuren startet ein Schachspiel?",
+		"antwort": "32"
+	},
+	{
+		"frage": "Wie heißt das Element Gold auf Latein?",
+		"antwort": "Aurum – im Periodensystem dargestellt als 'Au'."
+	},
+	{
+		"frage": "Welcher ehemalige US-Präsident war früher Schauspieler?",
+		"antwort": "Ronald Reagan"
+	},
+	{
+		"frage": "Wie hoch hängt ein Basketball-Korb?",
+		"antwort": "3.05 Meter"
+	},
+	{
+		"frage": "Was ist die Judikative?",
+		"antwort": "Die rechtsprechende Institution im Staat."
+	},
+	{
+		"frage": "Wie viele Fingerglieder hat eine Hand?",
+		"antwort": "14 – 4 Finger mit je 3 Gliedern, plus den Daumen mit 2 Gliedern."
+	},
+	{
+		"frage": "Wen beten Buddhisten an?",
+		"antwort": "Niemanden"
+	},
+	{
+		"frage": "Wie viele Nieren hat ein Mensch?",
+		"antwort": "2"
+	},
+	{
+		"frage": "Wie viele Bandscheiben hat ein Mensch?",
+		"antwort": "23"
+	},
+	{
+		"frage": "Wie viele Planeten hat unser Sonnensystem?",
+		"antwort": "8"
+	},
+	{
+		"frage": "Nach welcher Zeit feiert man die 'Petersilienhochzeit'?",
+		"antwort": "Nach 12 1/2 Jahren"
+	},
+	{
+		"frage": "In welchem Jahr war die Einführung des Euro?",
+		"antwort": "2002"
+	},
+	{
+		"frage": "Was wird durch Antibiotika bekämpft? Viren, Bakterien, Pilze?",
+		"antwort": "Antibiotika bekämpfen nur Bakterienerkrankungen."
+	},
+	{
+		"frage": "Wie werden die Nachkommen einer Kreuzung aus Tigern und Löwen genannt?",
+		"antwort": "Die heißen 'Liger'."
+	},
+	{
+		"frage": "Woraus besteht ein Diamant?",
+		"antwort": "Aus Kohlenstoff"
+	},
+	{
+		"frage": "Was bedeutet Guillotine?",
+		"antwort": "Gar nichts, sie ist nach ihrem Erfinder, dem Arzt Joseph-Ignace Guillotin, benannt."
+	}
+]
