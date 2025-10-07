@@ -12,4 +12,22 @@ export interface ServerToClientEvents {
 
 	// Sets the streamer name in the chat window
 	SET_STREAMER_NAME: (name: string) => void;
+
+	// New question for the players
+	NEW_QUESTION: (question: string, answer: string) => void;
+
+	// Start the round with a countdown
+	START_ROUND: (timeInSeconds: number) => void;
+
+	// Ends the Countdown of the round
+	END_ROUND: () => void;
+
+	// Player has answered the question
+	PLAYER_ANSWERED: (playerId: PlayerId, rightAnswer: boolean) => void;
+
+	// The voting for the dumbest player
+	PLAYER_VOTED: (playerId: PlayerId, dumbestPlayerVote: PlayerId) => void;
+
+	// The dumbest player has been nominated
+	PLAYER_OUT: (playerId: PlayerId) => void;
 }

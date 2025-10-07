@@ -16,4 +16,10 @@ export interface ClientToServerEvents {
 	) => void;
 
 	PUBLIC_CONNECTING: (roomCode: GameCode) => void;
+
+	START_ROUND: (timeInSeconds: number) => void;
+
+	PLAYER_ANSWERED: (rightAnswer: boolean) => void;
+
+	NOMINATE_DUMBEST_PLAYER: (playerId: PlayerId) => void;
 }
