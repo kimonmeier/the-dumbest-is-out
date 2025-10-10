@@ -5,4 +5,5 @@ export interface Player {
 	name: string;
 	link: string;
 	roomCode: GameCode;
+	isSpeaking: boolean;
 }

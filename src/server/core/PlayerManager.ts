@@ -35,7 +35,14 @@ export class PlayerManager implements BasicManager {
 				socket.join('game-master-' + roomCode);
 
 				callback(uuid, roomCode);
-			});
+			})
+			.on('PUBLIC_CONNECTING', (roomCode) => {
+				this.rooms.set(roomCode, [...(this.rooms.get(roomCode) ?? []), uuid]);
+				socket.join(roomCode);
+				socket.join(PUBLIC_ROOM_CODE + '-' + roomCode);
+				this.historyManager.PublishHistory(socket, roomCode);
+			})
+			.on('IS_SPEAKING', (speaking) => this.playerIsSpeaking(uuid, speaking));
 	}
 
 	private connectPlayer(
@@ -49,7 +56,8 @@ export class PlayerManager implements BasicManager {
 			playerId: playerId,
 			name: name,
 			link: link,
-			roomCode: roomCode
+			roomCode: roomCode,
+			isSpeaking: false
 		});
 
 		socket.join(roomCode);
@@ -82,5 +90,26 @@ export class PlayerManager implements BasicManager {
 		this.players.delete(playerId);
 
 		this.historyManager.SendAndSaveToHistory(gameRoomCode!, 'PLAYER_LEFT', playerId);
+	}
+
+	private playerIsSpeaking(playerId: PlayerId, speaking: boolean): void {
+		const player = this.players.get(playerId);
+		if (!player) {
+			return;
+		}
+
+		if (player.isSpeaking === speaking) {
+			return;
+		}
+
+		player.isSpeaking = speaking;
+		this.players.set(playerId, player);
+
+		this.historyManager.SendAndSaveToHistory(
+			player.roomCode,
+			'PLAYER_SPEAKING_STATUS_CHANGED',
+			playerId,
+			speaking
+		);
 	}
 }

@@ -1,2 +1,140 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://svelte.dev/docs/kit">svelte.dev/docs/kit</a> to read the documentation</p>
+<script lang="ts">
+	import { goto } from '$app/navigation';
+	import { page } from '$app/state';
+	import ErrorMessage from '@client/lib/components/alerts/ErrorMessage.svelte';
+	import { GameManager } from '@client/lib/services/GameManager';
+	import { currentPlayerId, isGamemaster, isLoggedIn } from '@client/lib/stores/CredentialStore';
+	import { gameCode } from '@client/lib/stores/GameStore';
+	import type { GameCode } from '@gameshow-lib/message/OpaqueTypes';
+	import { onMount, tick } from 'svelte';
+
+	let errors: string | undefined;
+	let link: string;
+	let username: string;
+	let roomCode: GameCode;
+	let isLoading: boolean;
+
+	async function login() {
+		if (isLoading) {
+			return;
+		}
+
+		isLoading = true;
+
+		await tick();
+
+		const connected = await openConnection();
+
+		if (!connected) {
+			errors =
+				'Beim Verbinden mit dem Server ist ein Fehler aufgetreten, bitte versuche es erneut!';
+		} else {
+			errors = undefined;
+			if (page.url.searchParams.has('gamemaster')) {
+				GameManager.getInstance()
+					.Socket.timeout(1000)
+					.emit('GAME_MASTER_CONNECTING', username, link, (error, playerId, roomCode) => {
+						currentPlayerId.set(playerId!);
+						isLoggedIn.set(true);
+						gameCode.set(roomCode);
+
+						goto('gamemaster');
+					});
+			} else {
+				GameManager.getInstance()
+					.Socket.timeout(1000)
+					.emit('PLAYER_CONNECTING', username, link, roomCode, (error, playerId) => {
+						currentPlayerId.set(playerId!);
+						isLoggedIn.set(true);
+
+						goto('play');
+					});
+			}
+		}
+
+		isLoading = false;
+	}
+
+	async function openConnection(): Promise<boolean> {
+		GameManager.getInstance().startApp();
+		const connected = await GameManager.getInstance().awaitConnection(10);
+		console.log('IsConnected:', connected);
+
+		return GameManager.getInstance().IsConnected;
+	}
+
+	onMount(() => {
+		if ($isLoggedIn) {
+			goto('play');
+		}
+
+		if (page.url.searchParams.has('public') && page.url.searchParams.has('roomCode')) {
+			openConnection().then((isConnected) => {
+				if (!isConnected) {
+					return;
+				}
+
+				GameManager.getInstance()
+					.Socket.timeout(1000)
+					.emit('PUBLIC_CONNECTING', page.url.searchParams.get('roomCode') as GameCode);
+
+				$isLoggedIn = true;
+
+				tick().then(() => {
+					goto('public');
+				});
+			});
+		} else if (page.url.searchParams.has('gamemaster')) {
+			$isGamemaster = true;
+		}
+	});
+</script>
+
+<div class="flex flex-col items-center justify-center m-auto h-full w-full">
+	<div class="border rounded-xl w-1/3 p-10">
+		<h1>Gameshow Login!</h1>
+		<div class="mt-5">
+			<div class="flex flex-col px-2 py-1">
+				<label class="font-bold mb-2" for="usernameInput">Name:</label>
+				<input
+					class="rounded bg-gray-600"
+					id="usernameInput"
+					disabled={isLoading}
+					bind:value={username}
+					type="text"
+				/>
+			</div>
+			<div class="flex flex-col px-2 py-1">
+				<label class="font-bold mb-2" for="usernameInput">Webcam Link:</label>
+				<input
+					class="rounded bg-gray-600"
+					id="usernameInput"
+					disabled={isLoading}
+					bind:value={link}
+					type="text"
+				/>
+			</div>
+			<div class="flex flex-col px-2 py-1">
+				<label class="font-bold mb-2" for="roomCodeInput">Room Code:</label>
+				<input
+					class="rounded bg-gray-600"
+					id="roomCodeInput"
+					disabled={isLoading}
+					bind:value={roomCode}
+					type="text"
+				/>
+			</div>
+			<div class="flex flex-col px-2 py-1">
+				<button
+					class="rounded p-2 font-bold bg-blue-600"
+					disabled={isLoading || $isLoggedIn}
+					on:click={login}
+				>
+					Login
+				</button>
+			</div>
+		</div>
+	</div>
+
+	<ErrorMessage message={errors} />
+</div>

@@ -14,7 +14,10 @@ export interface ServerToClientEvents {
 	SET_STREAMER_NAME: (name: string) => void;
 
 	// New question for the players
-	NEW_QUESTION: (question: string, answer: string) => void;
+	NEW_QUESTION: (question: string) => void;
+
+	// New Answer available for the curretn Question
+	NEW_ANSWER: (answer: string) => void;
 
 	// Start the round with a countdown
 	START_ROUND: (timeInSeconds: number) => void;
@@ -30,4 +33,6 @@ export interface ServerToClientEvents {
 
 	// The dumbest player has been nominated
 	PLAYER_OUT: (playerId: PlayerId) => void;
+
+	PLAYER_SPEAKING_STATUS_CHANGED: (playerId: PlayerId, speaking: boolean) => void;
 }
