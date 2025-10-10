@@ -75,7 +75,10 @@ export class GameManager {
 			.on('PLAYER_JOINED', (id, name, link) => this.playerJoined(id, name, link))
 			.on('PLAYER_LEFT', (id) => this.playerLeft(id))
 			.on('GAMEMASTER_LOGIN', (url) => this.gameMasterLogin(url))
-			.on('PLAYER_OUT', (playerId) => this.playerOut(playerId));
+			.on('PLAYER_OUT', (playerId) => this.playerOut(playerId))
+			.on('PLAYER_SPEAKING_STATUS_CHANGED', (playerId, isSpeaking) =>
+				this.playerIsSpeaking(playerId, isSpeaking)
+			);
 	}
 
 	private playerJoined(playerId: PlayerId, name: string, link: string): void {
@@ -98,5 +101,9 @@ export class GameManager {
 
 	private playerOut(playerId: PlayerId): void {
 		playerStore.eliminatePlayer(playerId);
+	}
+
+	private playerIsSpeaking(playerId: PlayerId, isSpeaking: boolean): void {
+		playerStore.updateSpeakingStatus(playerId, isSpeaking);
 	}
 }
