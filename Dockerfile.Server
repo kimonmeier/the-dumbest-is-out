@@ -8,7 +8,7 @@ WORKDIR /app
 COPY ./src/server ./src/server
 COPY ./src/lib ./src/lib
 COPY ./import_map.json .
-COPY deno.json .
+COPY Deno.json .
 COPY ./package.json .
 
 RUN deno install
