@@ -35,4 +35,8 @@ export interface ServerToClientEvents {
 	PLAYER_OUT: (playerId: PlayerId) => void;
 
 	PLAYER_SPEAKING_STATUS_CHANGED: (playerId: PlayerId, speaking: boolean) => void;
+
+	STARTED_VOTING: () => void;
+
+	STOPPED_VOTING: () => void;
 }

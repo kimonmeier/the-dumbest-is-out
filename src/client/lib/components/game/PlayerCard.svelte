@@ -4,6 +4,7 @@
 	import PlayerName from './PlayerName.svelte';
 	import { PlayerStatus } from '@gameshow-lib/enums/PlayerStatus';
 	import Icon from '@iconify/svelte';
+	import PlayerVoteButton from './PlayerVoteButton.svelte';
 
 	export let player: PlayerModel;
 	export { className as class };
@@ -20,6 +21,7 @@
 		<PlayerName name={player.name} />
 		<Icon icon="mdi:skull" class="w-full h-full text-gray-700 opacity-70" />
 	{:else}
+		<PlayerVoteButton playerId={player.id} />
 		<PlayerName name={player.name} />
 		<VodNinjaWrapper url={player.link} />
 	{/if}

@@ -6,6 +6,8 @@ import { playerStore } from '../stores/PlayerStore';
 import type { PlayerId } from '@gameshow-lib/message/OpaqueTypes';
 import { PlayerStatus } from '@gameshow-lib/enums/PlayerStatus';
 import { gameMasterUrl } from '../stores/CredentialStore';
+import { isVoting, votingSummaryStore } from '../stores/VotingStore';
+import { start } from 'repl';
 
 export type AppSocket = Socket<ServerToClientEvents, ClientToServerEvents>;
 
@@ -78,7 +80,10 @@ export class GameManager {
 			.on('PLAYER_OUT', (playerId) => this.playerOut(playerId))
 			.on('PLAYER_SPEAKING_STATUS_CHANGED', (playerId, isSpeaking) =>
 				this.playerIsSpeaking(playerId, isSpeaking)
-			);
+			)
+			.on('PLAYER_VOTED', (playerId, votedFor) => this.votedForDumbest(playerId, votedFor))
+			.on('STARTED_VOTING', () => this.startedVoting())
+			.on('STOPPED_VOTING', () => this.stoppedVoting());
 	}
 
 	private playerJoined(playerId: PlayerId, name: string, link: string): void {
@@ -87,7 +92,8 @@ export class GameManager {
 			name: name,
 			link: link,
 			status: PlayerStatus.Playing,
-			isSpeaking: false
+			isSpeaking: false,
+			votedForDumbest: null
 		});
 	}
 
@@ -105,5 +111,21 @@ export class GameManager {
 
 	private playerIsSpeaking(playerId: PlayerId, isSpeaking: boolean): void {
 		playerStore.updateSpeakingStatus(playerId, isSpeaking);
+	}
+
+	private startedVoting(): void {
+		votingSummaryStore.reset();
+		playerStore.clearVoting();
+
+		isVoting.set(true);
+	}
+
+	private stoppedVoting(): void {
+		isVoting.set(true);
+	}
+
+	private votedForDumbest(playerId: PlayerId, votedFor: PlayerId): void {
+		votingSummaryStore.vote(votedFor);
+		playerStore.votedForDumbest(playerId, votedFor);
 	}
 }

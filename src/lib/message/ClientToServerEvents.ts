@@ -1,3 +1,4 @@
+import type { PlayerStatus } from '@gameshow-lib/enums/PlayerStatus';
 import type { GameCode, PlayerId } from './OpaqueTypes';
 
 export interface ClientToServerEvents {
@@ -26,4 +27,10 @@ export interface ClientToServerEvents {
 	NOMINATE_DUMBEST_PLAYER: (dumbestPlayerId: PlayerId) => void;
 
 	IS_SPEAKING: (speaking: boolean) => void;
+
+	START_VOTING: (roomCode: GameCode) => void;
+
+	STOP_VOTING: (roomCode: GameCode) => void;
+
+	CHANGE_PLAYER_STATUS: (playerId: PlayerId, status: PlayerStatus) => void;
 }

@@ -1,6 +1,4 @@
 <script lang="ts" generics="T">
-	import { createEventDispatcher } from 'svelte';
-
 	let className = '';
 
 	export { className as class };

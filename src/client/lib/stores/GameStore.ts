@@ -3,5 +3,5 @@ import { writable } from 'svelte/store';
 
 export const gameCode = writable<GameCode | undefined>(undefined);
 export const currentQuestion = writable<string | null>(null);
-export const currentAnswwer = writable<string | null>(null);
+export const currentAnswer = writable<string | null>(null);
 export const countdown = writable<number | null>(null);

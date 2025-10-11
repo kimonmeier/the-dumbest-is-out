@@ -7,4 +7,5 @@ export interface PlayerModel {
 	link: string;
 	status: PlayerStatus;
 	isSpeaking: boolean;
+	votedForDumbest: PlayerId | null;
 }
