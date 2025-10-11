@@ -81,7 +81,7 @@
 				$isLoggedIn = true;
 
 				tick().then(() => {
-					goto('public');
+					goto('play');
 				});
 			});
 		} else if (page.url.searchParams.has('gamemaster')) {
