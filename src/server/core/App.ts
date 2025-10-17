@@ -32,7 +32,7 @@ export class App {
 
 		this.historyManager = new HistoryManager(this.webSocket);
 		this.playerManager = new PlayerManager(this.historyManager, this.webSocket);
-		this.roundManager = new RoundManager(this.historyManager, this.eventBus);
+		this.roundManager = new RoundManager(this.historyManager, this.playerManager, this.eventBus);
 		this.questionManager = new QuestionManager(this.historyManager, this.webSocket, this.eventBus);
 	}
 

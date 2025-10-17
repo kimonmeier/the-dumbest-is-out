@@ -6,8 +6,8 @@ import { PlayerStatus } from '@gameshow-lib/enums/PlayerStatus';
 interface PlayerStore extends Readable<PlayerModel[]> {
 	addPlayer: (player: PlayerModel) => void;
 	removePlayer: (playerId: PlayerId) => void;
-	eliminatePlayer: (playerId: PlayerId) => void;
 	updateSpeakingStatus: (playerId: PlayerId, isSpeaking: boolean) => void;
+	updatePlayerStatus: (playerId: PlayerId, playerStatus: PlayerStatus) => void;
 	votedForDumbest: (playerId: PlayerId, votedFor: PlayerId) => void;
 	clearVoting: () => void;
 	reset: () => void;
@@ -25,12 +25,23 @@ function createPlayerStore(): PlayerStore {
 				}
 				return [...players, player];
 			}),
-		removePlayer: (playerId: PlayerId) =>
-			update((players) => players.filter((p) => p.id !== playerId)),
-		eliminatePlayer: (playerId: PlayerId) =>
-			update((players) =>
-				players.map((p) => (p.id === playerId ? { ...p, status: PlayerStatus.Eliminated } : p))
-			),
+		removePlayer: (playerId: PlayerId) => {
+			update((players) => {
+				const currentPlayer = players.find((x) => x.id == playerId);
+
+				if (!currentPlayer) {
+					return players;
+				}
+
+				if (currentPlayer.status == PlayerStatus.Eliminated) {
+					return players;
+				}
+
+				return players.filter((x) => x.id !== playerId);
+			});
+		},
+		updatePlayerStatus: (playerId: PlayerId, status: PlayerStatus) =>
+			update((players) => players.map((p) => (p.id === playerId ? { ...p, status: status } : p))),
 		updateSpeakingStatus: (playerId: PlayerId, isSpeaking: boolean) =>
 			update((players) => players.map((p) => (p.id === playerId ? { ...p, isSpeaking } : p))),
 		reset: () => set([]),

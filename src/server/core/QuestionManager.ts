@@ -25,16 +25,17 @@ export class QuestionManager implements BasicManager {
 
 		eventBus.registerToEvent({
 			event: 'START_ROUND',
-			listener: (request) =>
-				this.roundStart(request.payload.roomCode, request.payload.timeInSeconds)
+			listener: (request) => this.roundStart(request.payload.roomCode)
 		});
 
 		this.questions = questionsData as Question[];
 	}
 
-	public registerSocket(socket: AppSocket, uuid: PlayerId): void {}
+	public registerSocket(socket: AppSocket, uuid: PlayerId): void {
+		socket.on('PLAYER_ANSWERED', (roomCode) => this.chooseNextQuestion(roomCode));
+	}
 
-	private roundStart(roomCode: GameCode, timeInSeconds: number): void {
+	private roundStart(roomCode: GameCode): void {
 		this.chooseNextQuestion(roomCode);
 	}
 

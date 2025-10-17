@@ -5,9 +5,20 @@ import { io, Socket } from 'socket.io-client';
 import { playerStore } from '../stores/PlayerStore';
 import type { PlayerId } from '@gameshow-lib/message/OpaqueTypes';
 import { PlayerStatus } from '@gameshow-lib/enums/PlayerStatus';
-import { gameMasterUrl } from '../stores/CredentialStore';
-import { isVoting, votingSummaryStore } from '../stores/VotingStore';
-import { start } from 'repl';
+import { currentPlayerId, gameMasterUrl, isEliminated } from '../stores/CredentialStore';
+import { isVoting, votedPlayer, votingSummaryStore } from '../stores/VotingStore';
+import {
+	countdown,
+	currentAnswer,
+	currentPlayerAsking,
+	currentQuestion
+} from '../stores/GameStore';
+import {
+	backgroundMusicStore,
+	rightAnswerSoundStore,
+	wrongAnswerSoundStore
+} from '../stores/AudioStore';
+import { get } from 'svelte/store';
 
 export type AppSocket = Socket<ServerToClientEvents, ClientToServerEvents>;
 
@@ -83,7 +94,14 @@ export class GameManager {
 			)
 			.on('PLAYER_VOTED', (playerId, votedFor) => this.votedForDumbest(playerId, votedFor))
 			.on('STARTED_VOTING', () => this.startedVoting())
-			.on('STOPPED_VOTING', () => this.stoppedVoting());
+			.on('STOPPED_VOTING', () => this.stoppedVoting())
+			.on('START_ROUND', (timeInSeconds) => this.startGame(timeInSeconds))
+			.on('NEW_QUESTION', (question) => this.newQuestion(question))
+			.on('NEW_ANSWER', (answer) => this.newAnswer(answer))
+			.on('PLAYER_ANSWERED', (playerId, rightAnswer) => this.playerAnswered(playerId, rightAnswer))
+			.on('END_ROUND', () => this.endRound())
+			.on('PLAYER_IS_ANSWERING', (player) => this.isAnswering(player))
+			.on('CHNAGE_PLAYER_STATUS', (playerId, status) => this.updatePlayerStatus(playerId, status));
 	}
 
 	private playerJoined(playerId: PlayerId, name: string, link: string): void {
@@ -106,7 +124,11 @@ export class GameManager {
 	}
 
 	private playerOut(playerId: PlayerId): void {
-		playerStore.eliminatePlayer(playerId);
+		playerStore.updatePlayerStatus(playerId, PlayerStatus.Eliminated);
+
+		if (get(currentPlayerId) === playerId) {
+			isEliminated.set(true);
+		}
 	}
 
 	private playerIsSpeaking(playerId: PlayerId, isSpeaking: boolean): void {
@@ -121,11 +143,52 @@ export class GameManager {
 	}
 
 	private stoppedVoting(): void {
-		isVoting.set(true);
+		isVoting.set(false);
+		votedPlayer.set(null);
 	}
 
 	private votedForDumbest(playerId: PlayerId, votedFor: PlayerId): void {
 		votingSummaryStore.vote(votedFor);
 		playerStore.votedForDumbest(playerId, votedFor);
+	}
+
+	private startGame(timeInSeconds: number): void {
+		countdown.set(timeInSeconds);
+		get(backgroundMusicStore).play();
+	}
+
+	private newQuestion(question: string): void {
+		console.log('New Question:', question);
+		currentQuestion.set(question);
+	}
+
+	private newAnswer(answer: string): void {
+		console.log('New Answer:', answer);
+		currentAnswer.set(answer);
+	}
+
+	private endRound(): void {
+		countdown.set(null);
+		currentQuestion.set('');
+		currentAnswer.set('');
+		get(backgroundMusicStore).play();
+	}
+
+	private isAnswering(player: PlayerId | null): void {
+		currentPlayerAsking.set(player);
+	}
+
+	private updatePlayerStatus(playerId: PlayerId, status: PlayerStatus): void {
+		playerStore.updatePlayerStatus(playerId, status);
+	}
+
+	private playerAnswered(playerId: PlayerId, rightAnswer: boolean): void {
+		console.log('Player answered:', playerId, rightAnswer);
+
+		if (rightAnswer) {
+			get(rightAnswerSoundStore).play();
+		} else {
+			get(wrongAnswerSoundStore).play();
+		}
 	}
 }

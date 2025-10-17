@@ -12,7 +12,7 @@
 <h3 on:dblclick={copyPublicUrl}>GameCode: {$gameCode}</h3>
 <h3>
 	{#if $countdown}
-		<Timer countFrom={$countdown} />
+		<Timer countFrom={countdown} />
 	{:else}
 		Kein Countdown
 	{/if}

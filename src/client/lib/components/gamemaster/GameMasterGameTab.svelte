@@ -2,6 +2,7 @@
 	import {
 		countdown,
 		currentAnswer,
+		currentPlayerAsking,
 		currentQuestion,
 		gameCode
 	} from '@client/lib/stores/GameStore';
@@ -10,9 +11,14 @@
 	import Timer from '../timer/Timer.svelte';
 	import { isVoting, votingSummaryStore } from '@client/lib/stores/VotingStore';
 	import { playerStore } from '@client/lib/stores/PlayerStore';
+	import Select from '../select/Select.svelte';
+	import type { PlayerModel } from '@client/lib/models/PlayerModel';
+	import { PlayerStatus } from '@gameshow-lib/enums/PlayerStatus';
+
+	let selectedPlayer: PlayerModel;
 
 	function startGame() {
-		GameManager.getInstance().Socket.emit('START_ROUND', $gameCode!, 300);
+		GameManager.getInstance().Socket.emit('START_ROUND', $gameCode!, selectedPlayer.id, 300);
 	}
 
 	function rightAnswer() {
@@ -34,22 +40,40 @@
 	function stopVoting() {
 		GameManager.getInstance().Socket.emit('STOP_VOTING', $gameCode!);
 	}
+
+	$: currentPlayer = $playerStore.find((x) => x.id == $currentPlayerAsking);
 </script>
 
 <div class="flex flex-col">
-	<GroupBox title="Spiel">
+	<GroupBox title="Spiel" class="flex flex-col gap-3">
 		{#if $countdown}
-			<Timer countFrom={$countdown} />
-			<div class="text-2xl font-bold">{$currentQuestion}</div>
-			<div class="text-2xl font-bold">{$currentAnswer}</div>
-			<div class="flex flex-row">
-				<button class="bg-red-400" on:click={rightAnswer}>Richtig</button>
-				<button class="bg-green-400" on:click={wrongAnswer}>Falsch</button>
+			<Timer countFrom={countdown} />
+			{#if currentPlayer}
+				<div class="text-yellow-400">
+					Spieler: {currentPlayer.name ?? 'Unkown'}
+				</div>
+			{:else}
+				<div class="text-yellow-400">Spieler: Kein SPIELER FESTGELEGT!</div>
+			{/if}
+			<div class="text-2xl font-bold">Frage: {$currentQuestion}</div>
+			<div class="text-2xl font-bold">Antwort: {$currentAnswer}</div>
+			<div class="flex flex-row gap-2">
+				<button class="bg-green-400 p-2 rounded-2xl" on:click={rightAnswer}>Richtig</button>
+				<button class="bg-red-400 p-2 rounded-2xl" on:click={wrongAnswer}>Falsch</button>
 			</div>
-			<button class="bg-yellow-400" on:click={endRound}>Runde beenden</button>
+			<button class="bg-yellow-400 p-2 rounded-2xl mt-3" on:click={endRound}>Runde beenden</button>
 		{:else}
 			<h1>NO GAME IN PROGRESS</h1>
-			<button class="bg-green-400" on:click={startGame}>Runde starten</button>
+			<div class="flex flex-row gap-2">
+				<p>Wähle einen Spieler aus, der die nächste Runde startet:</p>
+				<Select
+					items={$playerStore.filter((x) => x.status == PlayerStatus.Playing)}
+					textColumn="name"
+					bind:value={selectedPlayer}
+					class="w-full"
+				/>
+			</div>
+			<button class="bg-green-400 p-2 rounded-2xl" on:click={startGame}>Runde starten</button>
 		{/if}
 	</GroupBox>
 	<GroupBox title="Voting">
@@ -59,7 +83,9 @@
 				<div class="flex flex-col">
 					{#each $votingSummaryStore as vote}
 						<div class="flex flex-row">
-							<div class="flex-grow">{$playerStore.find((x) => x.id == vote.playerId)?.name}</div>
+							<div class="flex-grow font-bold">
+								{$playerStore.find((x) => x.id == vote.playerId)?.name ?? 'Unkown'}
+							</div>
 							<div>{vote.voteCount}</div>
 						</div>
 					{/each}
@@ -81,10 +107,10 @@
 					{/each}
 				</div>
 			</GroupBox>
-			<button class="bg-red-400" on:click={stopVoting}>Voting stoppen</button>
+			<button class="bg-red-400 p-2 rounded-2xl" on:click={stopVoting}>Voting stoppen</button>
 		{:else}
 			<p>Kein Voting aktiv</p>
-			<button class="bg-green-400" on:click={startVoting}>Voting starten</button>
+			<button class="bg-green-400 p-2 rounded-2xl" on:click={startVoting}>Voting starten</button>
 		{/if}
 	</GroupBox>
 </div>

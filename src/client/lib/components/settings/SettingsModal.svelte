@@ -1,5 +1,9 @@
 <script lang="ts">
-	import { backgroundMusicVolume } from '@client/lib/stores/AudioStore';
+	import {
+		backgroundMusicVolume,
+		rightAnswerSoundVolume,
+		wrongAnswerSoundVolume
+	} from '@client/lib/stores/AudioStore';
 	import GroupBox from '../groupBox/GroupBox.svelte';
 	import Modal from '../modal/Modal.svelte';
 	import {
@@ -38,6 +42,16 @@
 				<div>Lautstärke normale Musik:</div>
 
 				<input type="range" bind:value={$backgroundMusicVolume} min={0} max={1} step="0.005" />
+			</div>
+			<div class="flex flex-row">
+				<div>Lautstärke richtige Antwort:</div>
+
+				<input type="range" bind:value={$rightAnswerSoundVolume} min={0} max={0.5} step="0.005" />
+			</div>
+			<div class="flex flex-row">
+				<div>Lautstärke falsche Antwort:</div>
+
+				<input type="range" bind:value={$wrongAnswerSoundVolume} min={0} max={0.5} step="0.005" />
 			</div>
 		</div>
 	</GroupBox>

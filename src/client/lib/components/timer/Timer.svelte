@@ -1,25 +1,26 @@
 <script lang="ts">
-	import { readable } from 'svelte/store';
-	import { createEventDispatcher } from 'svelte';
+	import { get, readable, type Writable } from 'svelte/store';
 	import { fly } from 'svelte/transition';
 
-	const dispatch = createEventDispatcher();
 	// Props
-	export let countFrom = 0;
+	export let countFrom: Writable<number | null>;
 
 	// Reactive to account for changes in countFrom:
 	$: endDate = (function (secs) {
-		const e = Date.now() + secs * 1000;
+		const e = Date.now() + (get(secs) ?? 0) * 1000;
 		return new Date(e);
 	})(countFrom);
 
-	$: remaining = readable(countFrom, function start(set) {
+	$: remaining = readable(get(countFrom) ?? 0, function start(set) {
 		const interval = setInterval(() => {
 			let r = Math.round((endDate - new Date()) / 1000);
 			r = Math.max(r, 0);
+
+			countFrom.set(r);
 			set(r);
 			if (r <= 0) {
 				clearInterval(interval);
+				countFrom.set(null);
 			}
 		}, 1000);
 
@@ -31,10 +32,6 @@
 	$: hh = Math.floor($remaining / 3600);
 	$: mm = Math.floor(($remaining - hh * 3600) / 60);
 	$: ss = $remaining - hh * 3600 - mm * 60;
-
-	$: if ($remaining === 0) {
-		dispatch('timesup');
-	}
 
 	// Animation-related.
 	const duration = 200;

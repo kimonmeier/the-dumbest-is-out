@@ -1,3 +1,4 @@
+import type { PlayerStatus } from '@gameshow-lib/enums/PlayerStatus';
 import type { PlayerId } from './OpaqueTypes';
 
 export interface ServerToClientEvents {
@@ -33,6 +34,12 @@ export interface ServerToClientEvents {
 
 	// The dumbest player has been nominated
 	PLAYER_OUT: (playerId: PlayerId) => void;
+
+	// This sends the player that is currently answering to the client
+	PLAYER_IS_ANSWERING: (player: PlayerId | null) => void;
+
+	// Manually change the player status
+	CHNAGE_PLAYER_STATUS: (playerId: PlayerId, status: PlayerStatus) => void;
 
 	PLAYER_SPEAKING_STATUS_CHANGED: (playerId: PlayerId, speaking: boolean) => void;
 

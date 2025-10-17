@@ -15,5 +15,6 @@
 		top: -1%;
 		transform: translate(-50%, -50%);
 		box-shadow: none;
+		z-index: 10;
 	}
 </style>

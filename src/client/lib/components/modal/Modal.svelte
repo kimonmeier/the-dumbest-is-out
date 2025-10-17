@@ -11,14 +11,14 @@
 	bind:this={dialog}
 	on:close={() => (showModal = false)}
 	on:click|self={() => dialog?.close()}
-	class="bg-neutral-800 text-white"
+	class="bg-neutral-800 text-white m-auto"
 >
 	<!-- svelte-ignore a11y-no-static-element-interactions -->
 	<div on:click|stopPropagation class="w-full h-full">
 		<slot name="header" />
-		<hr />
+		<br />
 		<slot />
-		<hr />
+		<br />
 		<!-- svelte-ignore a11y-autofocus -->
 		<button autofocus on:click={() => dialog?.close()} class="bg-gray-600 rounded-xl p-2 my-2">
 			Schliessen
@@ -29,6 +29,7 @@
 <style>
 	dialog {
 		min-width: 50vh;
+		min-height: 50vh;
 		border-radius: 0.2em;
 		border: none;
 		padding: 0;

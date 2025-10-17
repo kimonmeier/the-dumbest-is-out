@@ -18,7 +18,7 @@ export interface ClientToServerEvents {
 
 	PUBLIC_CONNECTING: (roomCode: GameCode) => void;
 
-	START_ROUND: (roomCode: GameCode, timeInSeconds: number) => void;
+	START_ROUND: (roomCode: GameCode, playerToAskQuestion: PlayerId, timeInSeconds: number) => void;
 
 	END_ROUND: (roomCode: GameCode) => void;
 
