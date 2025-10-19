@@ -1,12 +1,11 @@
-FROM node:22-alpine
+FROM node:24-alpine
 
 COPY . .
 
-RUN npm i
-RUN npm run client::build
+RUN yarn install
+RUN yarn client::build
 
 COPY . .
 
 EXPOSE 3000
-CMD ["node", "build"]
-
+CMD ["yarn", "node", "build"]

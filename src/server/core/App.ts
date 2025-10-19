@@ -9,6 +9,8 @@ import { PlayerManager } from './PlayerManager';
 import { createInMemoryEventBus } from '@danielemariani/ts-event-bus';
 import type { EventDeclaration } from '@server/events/EventDeclaration';
 import type { GameshowEventBus } from '@server/events/Eventbus';
+import { RoundManager } from './RoundManager';
+import { QuestionManager } from './QuestionManager';
 
 export type AppServer = Server<ClientToServerEvents, ServerToClientEvents, object, object>;
 export type AppSocket = Socket<ClientToServerEvents, ServerToClientEvents, object, object>;
@@ -17,6 +19,8 @@ export class App {
 	private readonly webSocket: AppServer;
 	private readonly historyManager: HistoryManager;
 	private readonly playerManager: PlayerManager;
+	private readonly roundManager: RoundManager;
+	private readonly questionManager: QuestionManager;
 	private readonly eventBus: GameshowEventBus;
 
 	public constructor() {
@@ -28,6 +32,8 @@ export class App {
 
 		this.historyManager = new HistoryManager(this.webSocket);
 		this.playerManager = new PlayerManager(this.historyManager, this.webSocket);
+		this.roundManager = new RoundManager(this.historyManager, this.playerManager, this.eventBus);
+		this.questionManager = new QuestionManager(this.historyManager, this.webSocket, this.eventBus);
 	}
 
 	public startApp(): void {
@@ -45,6 +51,8 @@ export class App {
 
 			this.historyManager.registerSocket(socket, userId);
 			this.playerManager.registerSocket(socket, userId);
+			this.roundManager.registerSocket(socket, userId);
+			this.questionManager.registerSocket(socket, userId);
 		});
 
 		this.webSocket.listen(Deno.env.get('PORT') ?? 3000);

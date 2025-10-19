@@ -5,6 +5,7 @@ import type { HistoryManager } from './HistoryManager';
 import type { Player } from '@server/models/Player';
 import { PUBLIC_ROOM_CODE } from '@server/Konst';
 import StringHelper from '@gameshow-lib/utils/StringUtils';
+import { PlayerStatus } from '@gameshow-lib/enums/PlayerStatus';
 
 export class PlayerManager implements BasicManager {
 	private readonly historyManager: HistoryManager;
@@ -35,7 +36,15 @@ export class PlayerManager implements BasicManager {
 				socket.join('game-master-' + roomCode);
 
 				callback(uuid, roomCode);
-			});
+			})
+			.on('PUBLIC_CONNECTING', (roomCode) => {
+				this.rooms.set(roomCode, [...(this.rooms.get(roomCode) ?? []), uuid]);
+				socket.join(roomCode);
+				socket.join(PUBLIC_ROOM_CODE + '-' + roomCode);
+				this.historyManager.PublishHistory(socket, roomCode);
+			})
+			.on('IS_SPEAKING', (speaking) => this.playerIsSpeaking(uuid, speaking))
+			.on('CHANGE_PLAYER_STATUS', (playerId, status) => this.changePlayerStatus(playerId, status));
 	}
 
 	private connectPlayer(
@@ -49,7 +58,9 @@ export class PlayerManager implements BasicManager {
 			playerId: playerId,
 			name: name,
 			link: link,
-			roomCode: roomCode
+			roomCode: roomCode,
+			status: PlayerStatus.Playing,
+			isSpeaking: false
 		});
 
 		socket.join(roomCode);
@@ -82,5 +93,69 @@ export class PlayerManager implements BasicManager {
 		this.players.delete(playerId);
 
 		this.historyManager.SendAndSaveToHistory(gameRoomCode!, 'PLAYER_LEFT', playerId);
+	}
+
+	private playerIsSpeaking(playerId: PlayerId, speaking: boolean): void {
+		const player = this.players.get(playerId);
+		if (!player) {
+			return;
+		}
+
+		if (player.isSpeaking === speaking) {
+			return;
+		}
+
+		player.isSpeaking = speaking;
+		this.players.set(playerId, player);
+
+		this.historyManager.SendAndSaveToHistory(
+			player.roomCode,
+			'PLAYER_SPEAKING_STATUS_CHANGED',
+			playerId,
+			speaking
+		);
+	}
+
+	public getGamecodeByPlayer(id: PlayerId): GameCode {
+		let retVal: GameCode | null = null;
+		this.rooms.forEach((players, room) => {
+			if (players.find((x) => x == id)) {
+				retVal = room;
+			}
+		});
+
+		if (!retVal) {
+			throw new Error('Room not found');
+		}
+
+		return retVal;
+	}
+
+	public getPlayers(roomCode: GameCode): Player[] {
+		return (
+			this.players
+				.values()
+				.filter((x) => x.roomCode === roomCode)
+				?.toArray() ?? []
+		);
+	}
+
+	public eliminatePlayer(playerWithMaxVotes: PlayerId) {
+		this.players.get(playerWithMaxVotes)!.status = PlayerStatus.Eliminated;
+		this.historyManager.SendAndSaveToHistory(
+			this.players.get(playerWithMaxVotes)!.roomCode,
+			'PLAYER_OUT',
+			playerWithMaxVotes
+		);
+	}
+
+	private changePlayerStatus(uuid: PlayerId, status: PlayerStatus): void {
+		this.players.get(uuid)!.status = status;
+		this.historyManager.SendAndSaveToHistory(
+			this.players.get(uuid)!.roomCode,
+			'CHNAGE_PLAYER_STATUS',
+			uuid,
+			status
+		);
 	}
 }

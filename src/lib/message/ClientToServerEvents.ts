@@ -1,3 +1,4 @@
+import type { PlayerStatus } from '@gameshow-lib/enums/PlayerStatus';
 import type { GameCode, PlayerId } from './OpaqueTypes';
 
 export interface ClientToServerEvents {
@@ -17,9 +18,19 @@ export interface ClientToServerEvents {
 
 	PUBLIC_CONNECTING: (roomCode: GameCode) => void;
 
-	START_ROUND: (timeInSeconds: number) => void;
+	START_ROUND: (roomCode: GameCode, playerToAskQuestion: PlayerId, timeInSeconds: number) => void;
 
-	PLAYER_ANSWERED: (rightAnswer: boolean) => void;
+	END_ROUND: (roomCode: GameCode) => void;
 
-	NOMINATE_DUMBEST_PLAYER: (playerId: PlayerId) => void;
+	PLAYER_ANSWERED: (roomCode: GameCode, rightAnswer: boolean) => void;
+
+	NOMINATE_DUMBEST_PLAYER: (dumbestPlayerId: PlayerId) => void;
+
+	IS_SPEAKING: (speaking: boolean) => void;
+
+	START_VOTING: (roomCode: GameCode) => void;
+
+	STOP_VOTING: (roomCode: GameCode) => void;
+
+	CHANGE_PLAYER_STATUS: (playerId: PlayerId, status: PlayerStatus) => void;
 }
