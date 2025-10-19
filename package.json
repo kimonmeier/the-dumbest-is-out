@@ -8,7 +8,7 @@
 	"type": "module",
 	"scripts": {
 		"client::dev": "vite dev",
-		"client::build": "vite build",
+		"client::build": "vite build --debug",
 		"client::preview": "vite preview",
 		"client::check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
 		"client::check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
