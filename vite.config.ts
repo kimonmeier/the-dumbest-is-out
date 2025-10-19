@@ -14,7 +14,14 @@ export default defineConfig({
 	build: {
 		sourcemap: true,
 		cssMinify: true,
-		ssr: true
+		ssr: true,
+		rollupOptions: {
+			watch: false,
+			treeshake: false,
+			output: {
+				dynamicImportInCjs: false
+			}
+		}
 	},
 	server: {
 		proxy: {
