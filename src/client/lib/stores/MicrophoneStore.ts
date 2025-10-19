@@ -48,6 +48,10 @@ export const microphoneSpeakingVolume = readable<number | null>(null, (set) => {
 });
 
 export const isSpeaking = readable(false, (set) => {
+	if (!browser) {
+		return () => {};
+	}
+
 	let intervalId: number;
 	let lastValue: boolean = false;
 	intervalId = window.setInterval(() => {
