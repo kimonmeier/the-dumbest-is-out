@@ -44,7 +44,9 @@
 	"dependencies": {
 		"@danielemariani/ts-event-bus": "^1.2.0",
 		"@iconify/svelte": "^5.0.2",
+		"@tailwindcss/postcss": "^4.1.14",
 		"howler": "^2.2.4",
+		"postcss": "^8.5.6",
 		"socket.io": "^4.8.1",
 		"socket.io-client": "^4.8.1",
 		"uuid": "^13.0.0"

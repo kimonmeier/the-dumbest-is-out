@@ -1,7 +1,6 @@
 import { sveltekit } from '@sveltejs/kit/vite';
 import path from 'node:path';
 import { defineConfig } from 'vite';
-import tailwindcss from '@tailwindcss/vite';
 
 export default defineConfig({
 	resolve: {
@@ -11,7 +10,7 @@ export default defineConfig({
 			'@client': path.resolve('src/client/')
 		}
 	},
-	plugins: [tailwindcss(), sveltekit()],
+	plugins: [sveltekit()],
 	build: {
 		sourcemap: true,
 		cssMinify: true,
