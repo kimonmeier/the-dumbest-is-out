@@ -12,6 +12,11 @@ export default defineConfig({
 		}
 	},
 	plugins: [tailwindcss(), sveltekit()],
+	build: {
+		sourcemap: true,
+		cssMinify: true,
+		ssr: true
+	},
 	server: {
 		proxy: {
 			'/socket.io': {
