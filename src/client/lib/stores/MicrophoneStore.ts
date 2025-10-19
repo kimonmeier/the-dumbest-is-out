@@ -1,13 +1,18 @@
+import { browser } from '$app/environment';
 import { get, readable, writable } from 'svelte/store';
 import { GameManager } from '../services/GameManager';
 
 export const speakingThreshold = writable(10); // Adjust this threshold to a suitable value
 
 export const microphoneSpeakingVolume = readable<number | null>(null, (set) => {
+	if (!browser) {
+		return () => {};
+	}
+
 	let audioContext: AudioContext;
 	let analyser: AnalyserNode;
 	let microphone: MediaStreamAudioSourceNode;
-	let intervalId: number;
+	let intervalId: number | undefined;
 
 	const setupAudio = async () => {
 		try {
@@ -29,18 +34,16 @@ export const microphoneSpeakingVolume = readable<number | null>(null, (set) => {
 				const average = sum / dataArray.length;
 				set(average);
 			}, 10);
-		} catch (err) {
-			console.error('Error accessing microphone:', err);
+		} catch (error) {
+			console.error('Error accessing microphone:', error);
 		}
 	};
 
 	setupAudio();
 
 	return () => {
-		clearInterval(intervalId);
-		if (microphone) microphone.disconnect();
-		if (analyser) analyser.disconnect();
-		if (audioContext) audioContext.close();
+		if (intervalId) window.clearInterval(intervalId);
+		audioContext?.close();
 	};
 });
 
