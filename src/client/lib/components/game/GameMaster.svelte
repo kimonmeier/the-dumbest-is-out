@@ -33,9 +33,7 @@
 		<div
 			in:fade
 			out:fade
-			class="text-center absolute text-3xl top-2/3 break-words max-w-1/3 {getTextColor(
-				$playersAnswer
-			)}"
+			class="text-center absolute text-3xl top-5/8 break-words {getTextColor($playersAnswer)}"
 		>
 			{$currentQuestion}
 		</div>
