@@ -31,7 +31,7 @@
 		{:else}
 			<!-- svelte-ignore a11y_img_redundant_alt -->
 			<!-- svelte-ignore a11y_missing_attribute -->
-			<img src={player.link} class="w-full h-full rounded-b-lg rounded-t-2xl" />
+			<img src={player.link} class="w-full h-full rounded-b-lg rounded-t-2xl object-contain" />
 		{/if}
 	{/if}
 </div>

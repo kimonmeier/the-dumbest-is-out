@@ -5,7 +5,12 @@ import { io, Socket } from 'socket.io-client';
 import { playerStore } from '../stores/PlayerStore';
 import type { PlayerId } from '@gameshow-lib/message/OpaqueTypes';
 import { PlayerStatus } from '@gameshow-lib/enums/PlayerStatus';
-import { currentPlayerId, gameMasterUrl, isEliminated } from '../stores/CredentialStore';
+import {
+	currentPlayerId,
+	gameMasterUrl,
+	isEliminated,
+	isGamemaster
+} from '../stores/CredentialStore';
 import { isVoting, votedPlayer, votingSummaryStore } from '../stores/VotingStore';
 import {
 	countdown,
@@ -163,14 +168,19 @@ export class GameManager {
 	private newQuestion(question: string): void {
 		console.log('New Question:', question);
 
+		let baseTimeout = 250;
+		if (get(isGamemaster)) {
+			baseTimeout = 10;
+		}
+
 		setTimeout(() => {
 			currentQuestion.set(null);
 			playersAnswer.set(null);
-		}, 250);
+		}, baseTimeout);
 
 		setTimeout(() => {
 			currentQuestion.set(question);
-		}, 1000);
+		}, baseTimeout * 4);
 	}
 
 	private newAnswer(answer: string): void {
