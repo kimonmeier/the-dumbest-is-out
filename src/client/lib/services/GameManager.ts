@@ -11,7 +11,8 @@ import {
 	countdown,
 	currentAnswer,
 	currentPlayerAsking,
-	currentQuestion
+	currentQuestion,
+	playersAnswer
 } from '../stores/GameStore';
 import {
 	backgroundMusicStore,
@@ -161,7 +162,15 @@ export class GameManager {
 
 	private newQuestion(question: string): void {
 		console.log('New Question:', question);
-		currentQuestion.set(question);
+
+		setTimeout(() => {
+			currentQuestion.set(null);
+			playersAnswer.set(null);
+		}, 250);
+
+		setTimeout(() => {
+			currentQuestion.set(question);
+		}, 1000);
 	}
 
 	private newAnswer(answer: string): void {
@@ -187,6 +196,7 @@ export class GameManager {
 	private playerAnswered(playerId: PlayerId, rightAnswer: boolean): void {
 		console.log('Player answered:', playerId, rightAnswer);
 
+		playersAnswer.set(rightAnswer);
 		if (rightAnswer) {
 			get(rightAnswerSoundStore).play();
 			playerStore.playerScored(playerId);
