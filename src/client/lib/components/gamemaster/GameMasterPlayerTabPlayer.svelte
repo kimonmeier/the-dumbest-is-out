@@ -18,5 +18,6 @@
 
 <div class="flex flex-row h-10 gap-5 items-center">
 	<div class="flex-grow font-bold">{currentPlayer?.name ?? 'Spieler'}</div>
+	<div class="font-bold px-2">{currentPlayer.points}</div>
 	<Select {items} bind:value={currentPlayer.status} class="w-10" on:blur={changePlayerStatus} />
 </div>

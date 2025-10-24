@@ -9,7 +9,9 @@ interface PlayerStore extends Readable<PlayerModel[]> {
 	updateSpeakingStatus: (playerId: PlayerId, isSpeaking: boolean) => void;
 	updatePlayerStatus: (playerId: PlayerId, playerStatus: PlayerStatus) => void;
 	votedForDumbest: (playerId: PlayerId, votedFor: PlayerId) => void;
+	playerScored: (playerId: PlayerId) => void;
 	clearVoting: () => void;
+	clearPoints: () => void;
 	reset: () => void;
 }
 
@@ -44,8 +46,13 @@ function createPlayerStore(): PlayerStore {
 			update((players) => players.map((p) => (p.id === playerId ? { ...p, status: status } : p))),
 		updateSpeakingStatus: (playerId: PlayerId, isSpeaking: boolean) =>
 			update((players) => players.map((p) => (p.id === playerId ? { ...p, isSpeaking } : p))),
+		playerScored: (playerId: PlayerId) =>
+			update((players) =>
+				players.map((p) => (p.id === playerId ? { ...p, points: p.points + 1 } : p))
+			),
 		reset: () => set([]),
 		clearVoting: () => update((players) => players.map((p) => ({ ...p, votedForDumbest: null }))),
+		clearPoints: () => update((players) => players.map((p) => ({ ...p, points: 0 }))),
 		votedForDumbest: (playerId: PlayerId, votedFor: PlayerId) =>
 			update((players) =>
 				players.map((p) => (p.id === playerId ? { ...p, votedForDumbest: votedFor } : p))

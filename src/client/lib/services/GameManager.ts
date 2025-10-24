@@ -111,6 +111,7 @@ export class GameManager {
 			link: link,
 			status: PlayerStatus.Playing,
 			isSpeaking: false,
+			points: 0,
 			votedForDumbest: null
 		});
 	}
@@ -138,6 +139,7 @@ export class GameManager {
 	private startedVoting(): void {
 		votingSummaryStore.reset();
 		playerStore.clearVoting();
+		playerStore.clearPoints();
 
 		isVoting.set(true);
 	}
@@ -187,6 +189,7 @@ export class GameManager {
 
 		if (rightAnswer) {
 			get(rightAnswerSoundStore).play();
+			playerStore.playerScored(playerId);
 		} else {
 			get(wrongAnswerSoundStore).play();
 		}
