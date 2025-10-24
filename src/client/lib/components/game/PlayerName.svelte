@@ -3,7 +3,7 @@
 </script>
 
 <div class="content w-full">
-	<div class="text-white text-center text-4xl font-bold p-2 text-pretty shadow-sm">
+	<div class="text-white text-center text-4xl font-bold p-2 text-pretty">
 		{name}
 	</div>
 </div>

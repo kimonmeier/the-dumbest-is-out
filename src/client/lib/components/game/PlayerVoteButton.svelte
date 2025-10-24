@@ -16,14 +16,14 @@
 		GameManager.getInstance().Socket.emit('NOMINATE_DUMBEST_PLAYER', playerId);
 	}
 
-	function getBackgroundColor(): string {
+	function getBackgroundColor(votedPlayer: PlayerId | null): string {
 		let value = '';
 
-		if ($votedPlayer === null) {
+		if (votedPlayer === null) {
 			value += 'hover:bg-red-400 text-transparent hover:text-white ';
 		}
 
-		if ($votedPlayer === playerId) {
+		if (votedPlayer === playerId) {
 			value += 'bg-red-400 text-white';
 		} else {
 			value += 'bg-transparent text-transparent';
@@ -39,7 +39,9 @@
 		on:click={voteForPlayer}
 	>
 		<div
-			class="{getBackgroundColor()} w-full h-full flex flex-col justify-center items-center rounded-br-3xl rounded-tl-2xl"
+			class="{getBackgroundColor(
+				$votedPlayer
+			)} w-full h-full flex flex-col justify-center items-center rounded-br-3xl rounded-tl-2xl"
 		>
 			Vote!
 		</div>

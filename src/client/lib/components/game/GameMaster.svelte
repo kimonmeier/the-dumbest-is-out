@@ -1,13 +1,25 @@
 <script lang="ts">
 	import { gameMasterUrl } from '@client/lib/stores/CredentialStore';
 	import VodNinjaWrapper from '../cam/VodNinjaWrapper.svelte';
-	import { countdown, currentQuestion } from '@client/lib/stores/GameStore';
+	import { countdown, currentQuestion, playersAnswer } from '@client/lib/stores/GameStore';
 	import { fade } from 'svelte/transition';
 	import Timer from '../timer/Timer.svelte';
 
 	export { className as class };
 
 	let className = '';
+
+	function getTextColor(value: boolean | null): string {
+		if (value == null) {
+			return '';
+		}
+
+		if (value) {
+			return 'text-green-300';
+		}
+
+		return 'text-red-300';
+	}
 </script>
 
 <div
@@ -18,6 +30,14 @@
 	{/if}
 	<VodNinjaWrapper url={$gameMasterUrl} />
 	{#key $currentQuestion}
-		<div in:fade out:fade class="text-center absolute text-3xl top-2/3">{$currentQuestion}</div>
+		<div
+			in:fade
+			out:fade
+			class="text-center absolute text-3xl top-5/8 break-words max-w-1/3 {getTextColor(
+				$playersAnswer
+			)}"
+		>
+			{$currentQuestion}
+		</div>
 	{/key}
 </div>

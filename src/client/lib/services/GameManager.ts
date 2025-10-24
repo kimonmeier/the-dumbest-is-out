@@ -5,13 +5,19 @@ import { io, Socket } from 'socket.io-client';
 import { playerStore } from '../stores/PlayerStore';
 import type { PlayerId } from '@gameshow-lib/message/OpaqueTypes';
 import { PlayerStatus } from '@gameshow-lib/enums/PlayerStatus';
-import { currentPlayerId, gameMasterUrl, isEliminated } from '../stores/CredentialStore';
+import {
+	currentPlayerId,
+	gameMasterUrl,
+	isEliminated,
+	isGamemaster
+} from '../stores/CredentialStore';
 import { isVoting, votedPlayer, votingSummaryStore } from '../stores/VotingStore';
 import {
 	countdown,
 	currentAnswer,
 	currentPlayerAsking,
-	currentQuestion
+	currentQuestion,
+	playersAnswer
 } from '../stores/GameStore';
 import {
 	backgroundMusicStore,
@@ -111,6 +117,7 @@ export class GameManager {
 			link: link,
 			status: PlayerStatus.Playing,
 			isSpeaking: false,
+			points: 0,
 			votedForDumbest: null
 		});
 	}
@@ -138,6 +145,7 @@ export class GameManager {
 	private startedVoting(): void {
 		votingSummaryStore.reset();
 		playerStore.clearVoting();
+		playerStore.clearPoints();
 
 		isVoting.set(true);
 	}
@@ -159,7 +167,20 @@ export class GameManager {
 
 	private newQuestion(question: string): void {
 		console.log('New Question:', question);
-		currentQuestion.set(question);
+
+		let baseTimeout = 250;
+		if (get(isGamemaster)) {
+			baseTimeout = 10;
+		}
+
+		setTimeout(() => {
+			currentQuestion.set(null);
+			playersAnswer.set(null);
+		}, baseTimeout);
+
+		setTimeout(() => {
+			currentQuestion.set(question);
+		}, baseTimeout * 4);
 	}
 
 	private newAnswer(answer: string): void {
@@ -185,8 +206,10 @@ export class GameManager {
 	private playerAnswered(playerId: PlayerId, rightAnswer: boolean): void {
 		console.log('Player answered:', playerId, rightAnswer);
 
+		playersAnswer.set(rightAnswer);
 		if (rightAnswer) {
 			get(rightAnswerSoundStore).play();
+			playerStore.playerScored(playerId);
 		} else {
 			get(wrongAnswerSoundStore).play();
 		}

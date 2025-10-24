@@ -8,4 +8,5 @@ export interface PlayerModel {
 	status: PlayerStatus;
 	isSpeaking: boolean;
 	votedForDumbest: PlayerId | null;
+	points: number;
 }
